@@ -1,9 +1,6 @@
 import heapq
 from math import sqrt
-from itertools import combinations
 from copy import deepcopy
-from threading import Lock
-from tqdm import tqdm
 
 
 class ItemBasedRecommender:
@@ -57,7 +54,6 @@ class ItemBasedRecommender:
         self.avg_ratings_thread = [
             deepcopy(self.avg_ratings) for _ in range(self.num_threads)]
 
-
     def update_ratings(self, thread_id: int, user: int, item: int, rating: float) -> None:
         """ Update the rating, avg_ratings, and sim_matrix
         @param user: the user index
@@ -109,11 +105,12 @@ class ItemBasedRecommender:
 
         return result
 
-    def pred(self, thread_id: int, u: int, p: int, neighborhood_size: int) -> float:
+    def pred(self, thread_id: int, u: int, p: int, neighborhood_size: int, sim_threshold: float) -> float:
         """Predict the rating of user u on item p
         @param u: user index
         @param p: item index
         @param neighborhood_size: the size of the neighborhood of highest similarity
+        @param sim_threshold: the threshold of similarity
         @return predicted rating
         """
         numerator = 0
@@ -124,17 +121,14 @@ class ItemBasedRecommender:
                 continue
 
             current_sim = self.sim(thread_id, p, i)
-            if current_sim < 0:
+            if current_sim < sim_threshold:
                 continue
-            # sim_heap.append((current_sim, i))
+
             if len(sim_heap) < neighborhood_size:
                 heapq.heappush(sim_heap, (current_sim, i))
             else:
                 if current_sim > sim_heap[0][0]:
                     heapq.heappushpop(sim_heap, (current_sim, i))
-        # neighborhood_size = min(neighborhood_size, len(sim_heap))
-        # sim_heap = sorted(sim_heap, key=lambda x: x[0], reverse=True)[:neighborhood_size]
-        # sim_heap = sorted(sim_heap, reverse=True)[:neighborhood_size]
 
         for sim_val, i in sim_heap:
             numerator += sim_val * self.matrices[thread_id][u][i]
