@@ -1,7 +1,5 @@
 import time
-import math
 import json
-import numpy as np
 from item_based_rec import ItemBasedRecommender
 from user_based_rec import UserBasedRecommender
 from threading import Thread, Lock
@@ -9,6 +7,9 @@ from tqdm import tqdm
 
 INPUT_FILE = "assignment2-data.txt"
 OUTPUT_FILE = "assignment2-results.json"
+
+TEST_INPUT_FILE = "parsed-data-trimmed.txt"
+TEST_OUTPUT_FILE = "parsed-data-trimmed-results.json"
 
 
 class RecommenderCrossValidator():
@@ -121,18 +122,13 @@ class RecommenderCrossValidator():
 
         return mae
 
-    def item_based_validate(self, start_neighborhood_size=1, num_of_neighborhood_steps=10, start_sim_threshold=-1, end_sim_threshold=1, start_abs_sim_threshold=0, end_abs_sim_threshold=1) -> None:
-        sim_threshold_step = 0.1
-        total_iterations = (num_of_neighborhood_steps + round((end_sim_threshold - start_sim_threshold) / sim_threshold_step) +
-                            round((end_abs_sim_threshold - start_abs_sim_threshold) / sim_threshold_step)) * self.num_items * self.num_users
+    def item_based_validate(self, neighborhood_sizes: list, sim_thresholds: list, absolute_sim_thresholds:list) -> None:
+        total_iterations = (len(neighborhood_sizes) + len(sim_thresholds) + len(absolute_sim_thresholds)) * self.num_users * self.num_items
 
         print("Total iterations:", total_iterations)
-        print("num_items:", self.num_items)
-        print("num_users:", self.num_users)
         progress_bar = tqdm(total=total_iterations,
                             desc="Item-based validation")
-        for step in range(num_of_neighborhood_steps):
-            neighborhood_size = start_neighborhood_size + step * 2
+        for neighborhood_size in neighborhood_sizes:
             neighborhood_size_time = 0
             for user in range(self.num_users):
                 for item in range(self.num_items):
@@ -166,9 +162,8 @@ class RecommenderCrossValidator():
             })
             self.lock.release()
 
-        for sim_threshold in np.arange(start_sim_threshold, end_sim_threshold, sim_threshold_step):
+        for sim_threshold in sim_thresholds:
             sim_threshold_time = 0
-            absolute_sim_threshold_time = 0
             for user in range(self.num_users):
                 for item in range(self.num_items):
                     progress_bar.update(1)
@@ -200,8 +195,7 @@ class RecommenderCrossValidator():
             })
             self.lock.release()
 
-        for sim_threshold in np.arange(start_abs_sim_threshold, end_abs_sim_threshold, sim_threshold_step):
-            sim_threshold_time = 0
+        for absolute_sim_threshold in absolute_sim_thresholds:
             absolute_sim_threshold_time = 0
             for user in range(self.num_users):
                 for item in range(self.num_items):
@@ -214,7 +208,7 @@ class RecommenderCrossValidator():
 
                     start_time = time.time()
                     absolute_sim_threshold_pred_rating = self.item_based_rec.pred_with_absolute_sim_threshold(
-                        user, item, sim_threshold)
+                        user, item, absolute_sim_threshold)
                     end_time = time.time()
                     absolute_sim_threshold_time += end_time - start_time
                     self.item_based_absolute_sim_threshold_rec_matrix[user][item] = self.boundary_value(
@@ -223,7 +217,6 @@ class RecommenderCrossValidator():
                     self.item_based_rec.update_ratings(
                         user, item, self.matrix[user][item])
 
-            absolute_sim_threshold = sim_threshold
             absolute_sim_threshold_mae = self.compute_mae(
                 self.item_based_absolute_sim_threshold_rec_matrix)
             # print(f"Item-based {absolute_sim_threshold=}, {absolute_sim_threshold_mae=}, {absolute_sim_threshold_time=}")
@@ -236,19 +229,14 @@ class RecommenderCrossValidator():
             self.lock.release()
         progress_bar.close()
 
-    def user_based_validate(self, start_neighborhood_size=1, num_of_neighborhood_steps=10, start_sim_threshold=-1, end_sim_threshold=1, start_abs_sim_threshold=0, end_abs_sim_threshold=1) -> None:
-        sim_threshold_step = 0.1
-        total_iterations = (num_of_neighborhood_steps + round((end_sim_threshold - start_sim_threshold) / sim_threshold_step) +
-                            round((end_abs_sim_threshold - start_abs_sim_threshold) / sim_threshold_step)) * self.num_items * self.num_users
-        
+    def user_based_validate(self, neighborhood_sizes: list, sim_thresholds: list, absolute_sim_thresholds:list) -> None:
+        total_iterations = (len(neighborhood_sizes) + len(sim_thresholds) + len(absolute_sim_thresholds)) * self.num_items * self.num_users
+
         print("Total iterations:", total_iterations)
-        print("num_items:", self.num_items)
-        print("num_users:", self.num_users)
 
         progress_bar = tqdm(total=total_iterations,
                             desc="User-based validation")
-        for step in range(num_of_neighborhood_steps):
-            neighborhood_size = start_neighborhood_size + step * 2
+        for neighborhood_size in neighborhood_sizes:
             neighborhood_size_time = 0
             for user in range(self.num_users):
                 for item in range(self.num_items):
@@ -281,9 +269,8 @@ class RecommenderCrossValidator():
             })
             self.lock.release()
 
-        for sim_threshold in np.arange(start_sim_threshold, end_sim_threshold, sim_threshold_step):
+        for sim_threshold in sim_thresholds:
             sim_threshold_time = 0
-            absolute_sim_threshold_time = 0
             for user in range(self.num_users):
                 for item in range(self.num_items):
                     progress_bar.update(1)
@@ -315,8 +302,7 @@ class RecommenderCrossValidator():
             })
             self.lock.release()
 
-        for absolute_sim_threshold in np.arange(start_abs_sim_threshold, end_abs_sim_threshold, sim_threshold_step):
-            sim_threshold_time = 0
+        for absolute_sim_threshold in absolute_sim_thresholds:
             absolute_sim_threshold_time = 0
             for user in range(self.num_users):
                 for item in range(self.num_items):
@@ -329,7 +315,7 @@ class RecommenderCrossValidator():
 
                     start_time = time.time()
                     absolute_sim_threshold_pred_rating = self.user_based_rec.pred_with_absolute_sim_threshold(
-                        user, item, sim_threshold)
+                        user, item, absolute_sim_threshold)
                     end_time = time.time()
                     absolute_sim_threshold_time += end_time - start_time
                     self.user_based_absolute_sim_threshold_rec_matrix[user][item] = self.boundary_value(
@@ -351,13 +337,17 @@ class RecommenderCrossValidator():
         progress_bar.close()
 
     def start_validation(self):
-        # item_based_thread = Thread(
-        #     target=self.item_based_validate, args=(5, 1, -1, -0.9, -1, -0.9))
-        # user_based_thread = Thread(
-        #     target=self.user_based_validate, args=(5, 1, -1, -0.9, -1, -0.9))
 
-        item_based_thread = Thread(target=self.item_based_validate)
-        user_based_thread = Thread(target=self.user_based_validate)
+        neighborhood_sizes = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+        sim_thresholds = [-1, -0.9, -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
+        absolute_sim_thresholds = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+
+        # neighborhood_sizes = [5]
+        # sim_thresholds = [-1]
+        # absolute_sim_thresholds = [0]
+
+        item_based_thread = Thread(target=self.item_based_validate, args=(neighborhood_sizes, sim_thresholds, absolute_sim_thresholds))
+        user_based_thread = Thread(target=self.user_based_validate, args=(neighborhood_sizes, sim_thresholds, absolute_sim_thresholds))
 
         item_based_thread.start()
         user_based_thread.start()
@@ -370,8 +360,7 @@ class RecommenderCrossValidator():
 
 
 if __name__ == "__main__":
-    filename = "parsed-data-trimmed.txt"
-    result_filename = "parsed-data-trimmed-results.json"
-
+    # with RecommenderCrossValidator(TEST_INPUT_FILE, TEST_OUTPUT_FILE) as validator:
+    #     validator.start_validation()
     with RecommenderCrossValidator(INPUT_FILE, OUTPUT_FILE) as validator:
         validator.start_validation()
