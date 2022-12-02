@@ -119,8 +119,9 @@ class ItemBasedRecommender:
             if len(sim_heap) < neighborhood_size:
                 heapq.heappush(sim_heap, (current_sim, i))
             else:
-                if current_sim > sim_heap[0][0]:
-                    heapq.heappushpop(sim_heap, (current_sim, i))
+                if len(sim_heap) > 0:
+                    if current_sim > sim_heap[0][0]:
+                        heapq.heappushpop(sim_heap, (current_sim, i))
         return self.pred_based_on_chosen_neighbors(sim_heap, u, p)
 
     def pred_with_sim_threshold(self, u: int, p: int, sim_threshold: int) -> float:

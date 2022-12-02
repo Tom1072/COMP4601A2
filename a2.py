@@ -1,5 +1,7 @@
 import time
 import json
+import math
+import numpy as np
 from item_based_rec import ItemBasedRecommender
 from user_based_rec import UserBasedRecommender
 from threading import Thread, Lock
@@ -337,17 +339,26 @@ class RecommenderCrossValidator():
         progress_bar.close()
 
     def start_validation(self):
+        print(f"num_users: {self.num_users}, num_items: {self.num_items}")
 
-        neighborhood_sizes = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
-        sim_thresholds = [-1, -0.9, -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1]
-        absolute_sim_thresholds = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+
+
+        item_neighborhood_sizes = [0] + [pow(2, i) for i in range(0, math.ceil(math.log(self.num_items, 2)))]
+        user_neighborhood_sizes = [0] + [pow(2, i) for i in range(0, math.ceil(math.log(self.num_users, 2)))]
+        sim_thresholds = [threshold/10 for threshold in range(-10, 11, 1)]
+        absolute_sim_thresholds = [threshold/10 for threshold in range(0, 11, 1)]
 
         # neighborhood_sizes = [5]
         # sim_thresholds = [-1]
         # absolute_sim_thresholds = [0]
 
-        item_based_thread = Thread(target=self.item_based_validate, args=(neighborhood_sizes, sim_thresholds, absolute_sim_thresholds))
-        user_based_thread = Thread(target=self.user_based_validate, args=(neighborhood_sizes, sim_thresholds, absolute_sim_thresholds))
+        print(f"{item_neighborhood_sizes=}")
+        print(f"{user_neighborhood_sizes=}")
+        print(f"{sim_thresholds=}")
+        print(f"{absolute_sim_thresholds=}")
+
+        item_based_thread = Thread(target=self.item_based_validate, args=(item_neighborhood_sizes, sim_thresholds, absolute_sim_thresholds))
+        user_based_thread = Thread(target=self.user_based_validate, args=(user_neighborhood_sizes, sim_thresholds, absolute_sim_thresholds))
 
         item_based_thread.start()
         user_based_thread.start()

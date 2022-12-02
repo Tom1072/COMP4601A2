@@ -121,8 +121,9 @@ class UserBasedRecommender:
             if len(sim_heap) < neighborhood_size:
                 heapq.heappush(sim_heap, (current_sim, b))
             else:
-                if current_sim > sim_heap[0][0]:
-                    heapq.heappushpop(sim_heap, (current_sim, b))
+                if len(sim_heap) > 0:
+                    if current_sim > sim_heap[0][0]:
+                        heapq.heappushpop(sim_heap, (current_sim, b))
         return self.pred_based_on_chosen_neighbors(sim_heap, a, p)
 
     def pred_with_sim_threshold(self, a: int, p: int, sim_threshold: int) -> float:
