@@ -136,7 +136,7 @@ class ItemBasedRecommender:
                 continue
 
             current_sim = self.sim(p, i)
-            if (current_sim > sim_threshold):
+            if (current_sim >= sim_threshold):
                 neighbors.append((current_sim, i))
 
         return self.pred_based_on_chosen_neighbors(neighbors, u, p)
@@ -154,7 +154,7 @@ class ItemBasedRecommender:
                 continue
 
             current_sim = self.sim(p, i)
-            if (abs(current_sim) > absolute_sim_threshold):
+            if (abs(current_sim) >= absolute_sim_threshold):
                 neighbors.append((current_sim, i))
 
         return self.pred_based_on_chosen_neighbors(neighbors, u, p)
