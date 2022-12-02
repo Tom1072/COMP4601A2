@@ -5,8 +5,7 @@ from copy import deepcopy
 
 
 class UserBasedRecommender:
-    def __init__(self, filename: str, num_threads: int, no_review: int) -> None:
-        self.num_threads = num_threads
+    def __init__(self, filename: str, no_review: int) -> None:
         self.no_review = no_review
         self.parse_input(filename)
 
@@ -37,12 +36,11 @@ class UserBasedRecommender:
         self.items = items
 
         self.matrix = matrix
-        self.matrices = [deepcopy(matrix) for _ in range(self.num_threads)]
+        self.current_matrix = deepcopy(matrix)
 
         self.transpose_matrix = [[matrix[j][i] for j in range(
             len(matrix))] for i in range(len(matrix[0]))]
-        self.transpose_matrices = [
-            deepcopy(self.transpose_matrix) for _ in range(self.num_threads)]
+        self.current_transpose_matrix = deepcopy(self.transpose_matrix)
 
         # Initialize the average rating of each user
         self.avg_ratings = []
@@ -52,48 +50,46 @@ class UserBasedRecommender:
             self.avg_ratings.append(
                 sum(filtered_ratings) / len(filtered_ratings) if len(filtered_ratings) > 0 else 0)
 
-        self.avg_ratings_thread = [
-            deepcopy(self.avg_ratings) for _ in range(self.num_threads)]
+        self.avg_ratings_thread = deepcopy(self.avg_ratings)
 
-    def update_ratings(self, thread_id: int, user: int, item: int, rating: float) -> None:
+    def update_ratings(self, user: int, item: int, rating: float) -> None:
         """ Update the rating, avg_ratings, and sim_matrix
         @param user: the user index
         @param item: the item index
         @param rating: the new rating
         """
-        # Update the rating matrices
-        self.matrices[thread_id][user][item] = self.transpose_matrices[thread_id][item][user] = rating
+        # Update the rating current_matrix
+        self.current_matrix[user][item] = self.current_transpose_matrix[item][user] = rating
 
         if rating == self.no_review:
             # Update the average rating of the user
             filtered_ratings = list(
-                filter(lambda x: x != self.no_review, self.matrices[thread_id][user]))
-            self.avg_ratings_thread[thread_id][user] = sum(
+                filter(lambda x: x != self.no_review, self.current_matrix[user]))
+            self.avg_ratings_thread[user] = sum(
                 filtered_ratings) / len(filtered_ratings) if len(filtered_ratings) > 0 else 0
         else:
-            self.avg_ratings_thread[thread_id][user] = self.avg_ratings[user]
+            self.avg_ratings_thread[user] = self.avg_ratings[user]
 
-    def avg(self, thread_id, user: int) -> float:
+    def avg(self, user: int) -> float:
         """Return the average rating of the user"""
-        return self.avg_ratings_thread[thread_id][user]
+        return self.avg_ratings_thread[user]
 
-    def sim(self, thread_id: int, a_idx: int, b_idx: int) -> float:
+    def sim(self, a_idx: int, b_idx: int) -> float:
         """Calculate the similarity between two users
-        @param thread_id (int): _description_
         @param a_idx (int): user a index
         @param b_idx (int): user b index
         @return float: similarity between user a and user b
         """
-        a = self.matrices[thread_id][a_idx]
-        b = self.matrices[thread_id][b_idx]
+        a = self.current_matrix[a_idx]
+        b = self.current_matrix[b_idx]
         sum_both = sum_a = sum_b = 0
 
         for p in range(len(a)):
             if a[p] == self.no_review or b[p] == self.no_review:
                 continue
 
-            a_avg = self.avg(thread_id, a_idx)
-            b_avg = self.avg(thread_id, b_idx)
+            a_avg = self.avg(a_idx)
+            b_avg = self.avg(b_idx)
 
             sum_both += (a[p] - a_avg) * (b[p] - b_avg)
             sum_a += pow(a[p] - a_avg, 2)
@@ -107,38 +103,81 @@ class UserBasedRecommender:
 
         return result
 
-    def pred(self, thread_id: int, a: int, p: int, neighborhood_size: int, sim_threshold: float) -> float:
-        """Predict the rating of user u on item p
+    def pred_with_neighborhood_size(self, a: int, p: int, neighborhood_size: int) -> float:
+        """Predict the rating of user a on item p with the neighborhood of highest similarity
         @param u: user index
         @param p: item index
         @param neighborhood_size: the size of the neighborhood of highest similarity
         @param sim_threshold: the threshold of similarity
         @return predicted rating
         """
-        numerator = 0
-        denominator = 0
-
         sim_heap = []
         for b in range(self.num_users):
-            if b == a or self.matrices[thread_id][b][p] == self.no_review:
+            if b == a or self.current_matrix[b][p] == self.no_review:
                 continue
-
-            current_sim = self.sim(thread_id, a, b)
-            if current_sim < sim_threshold:
-                continue
+            
+            current_sim = self.sim(a, b)
 
             if len(sim_heap) < neighborhood_size:
                 heapq.heappush(sim_heap, (current_sim, b))
             else:
                 if current_sim > sim_heap[0][0]:
                     heapq.heappushpop(sim_heap, (current_sim, b))
+        return self.pred_based_on_chosen_neighbors(sim_heap, a, p)
 
-        for sim_val, b in sim_heap:
+    def pred_with_sim_threshold(self, a: int, p: int, sim_threshold: int) -> float:
+        """Predict the rating of user a on item p with neighbors that have similarity higher than sim_threshold
+        @param u: user index
+        @param p: item index
+        @param neighborhood_size: the size of the neighborhood of highest similarity
+        @param sim_threshold: the threshold of similarity
+        @return predicted rating
+        """
+        neighbors = []
+        for b in range(self.num_users):
+            if b == a or self.current_matrix[b][p] == self.no_review:
+                continue
+            
+            current_sim = self.sim(a, b)
+            if (current_sim >= sim_threshold):
+                neighbors.append((current_sim, b))
+
+        return self.pred_based_on_chosen_neighbors(neighbors, a, p)
+
+    def pred_with_absolute_sim_threshold(self, a: int, p: int, absolute_sim_threshold: int) -> float:
+        """Predict the rating of user a on item p with neighbors that have absolute similarity higher than sim_threshold
+        @param u: user index
+        @param p: item index
+        @param neighborhood_size: the size of the neighborhood of highest similarity
+        @param sim_threshold: the threshold of similarity
+        @return predicted rating
+        """
+        neighbors = []
+        for b in range(self.num_users):
+            if b == a or self.current_matrix[b][p] == self.no_review:
+                continue
+            
+            current_sim = self.sim(a, b)
+            if (abs(current_sim) >= absolute_sim_threshold):
+                neighbors.append((current_sim, b))
+
+        return self.pred_based_on_chosen_neighbors(neighbors, a, p)
+
+    def pred_based_on_chosen_neighbors(self, neighbors: list, a: int, p: int) -> float:
+        """Predict the rating of user u on item p
+        @param neighbors list(tuple(sim_val, index))): the list of users that are similar to user a and their similarity values
+        @param a: user index
+        @param p: item index
+        @return predicted rating
+        """
+        numerator = 0
+        denominator = 0
+        for sim_val, b in neighbors:
             numerator += sim_val * \
-                (self.matrices[thread_id][b][p] - self.avg(thread_id, b))
+                (self.current_matrix[b][p] - self.avg(b))
             denominator += sim_val
 
         if denominator == 0:
-            return self.avg(thread_id, a)
+            return self.avg(a)
         else:
-            return self.avg(thread_id, a) + (numerator / denominator)
+            return self.avg(a) + (numerator / denominator)
