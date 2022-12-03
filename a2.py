@@ -1,7 +1,6 @@
 import time
 import json
 import math
-import numpy as np
 from item_based_rec import ItemBasedRecommender
 from user_based_rec import UserBasedRecommender
 from threading import Thread, Lock
