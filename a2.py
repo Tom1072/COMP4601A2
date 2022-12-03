@@ -343,10 +343,12 @@ class RecommenderCrossValidator():
 
 
 
-        item_neighborhood_sizes = [0] + [pow(2, i) for i in range(0, math.ceil(math.log(self.num_items, 2)))]
-        user_neighborhood_sizes = [0] + [pow(2, i) for i in range(0, math.ceil(math.log(self.num_users, 2)))]
-        sim_thresholds = [threshold/10 for threshold in range(-10, 11, 1)]
-        absolute_sim_thresholds = [threshold/10 for threshold in range(0, 11, 1)]
+        # item_neighborhood_sizes = [0] + [pow(2, i) for i in range(0, math.ceil(math.log(self.num_items, 2)))]
+        # user_neighborhood_sizes = [0] + [pow(2, i) for i in range(0, math.ceil(math.log(self.num_users, 2)))]
+        user_neighborhood_sizes = [i for i in range(0, self.num_users + 1)]
+        item_neighborhood_sizes = [i for i in range(0, self.num_items + 1)]
+        sim_thresholds = [threshold/100 for threshold in range(-100, 101, 1)]
+        absolute_sim_thresholds = [threshold/100 for threshold in range(0, 101, 1)]
 
         # neighborhood_sizes = [5]
         # sim_thresholds = [-1]
