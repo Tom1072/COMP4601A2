@@ -6855,6 +6855,2314 @@
                 "mae": 1.0164809808405615,
                 "time": 34.45814561843872
             }
+        ],
+        "size-and-threshold": [
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -1.0,
+                "mae": 0.7182126620875765,
+                "time": 0.004480600357055664
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -0.9,
+                "mae": 0.7182126620875765,
+                "time": 0.00450897216796875
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -0.8,
+                "mae": 0.7182126620875765,
+                "time": 0.010788917541503906
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -0.7,
+                "mae": 0.7182126620875765,
+                "time": 0.017144203186035156
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -0.6,
+                "mae": 0.7182126620875765,
+                "time": 0.017057180404663086
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -0.5,
+                "mae": 0.7182126620875765,
+                "time": 0.010789632797241211
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -0.4,
+                "mae": 0.7182126620875765,
+                "time": 0.02224278450012207
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -0.3,
+                "mae": 0.7182126620875765,
+                "time": 0.011045217514038086
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -0.2,
+                "mae": 0.7182126620875765,
+                "time": 0.016730785369873047
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -0.1,
+                "mae": 0.7182126620875765,
+                "time": 0.017388343811035156
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.0,
+                "mae": 0.7182126620875765,
+                "time": 0.017087936401367188
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.1,
+                "mae": 0.7182126620875765,
+                "time": 0.0046045780181884766
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.2,
+                "mae": 0.7182126620875765,
+                "time": 0.00460052490234375
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.3,
+                "mae": 0.7182126620875765,
+                "time": 0.004483461380004883
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.4,
+                "mae": 0.7182126620875765,
+                "time": 0.004596710205078125
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.5,
+                "mae": 0.7182126620875765,
+                "time": 0.0045473575592041016
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.6,
+                "mae": 0.7182126620875765,
+                "time": 0.004526853561401367
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.7,
+                "mae": 0.7182126620875765,
+                "time": 0.01094675064086914
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.8,
+                "mae": 0.7182126620875765,
+                "time": 0.004681587219238281
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.9,
+                "mae": 0.7182126620875765,
+                "time": 0.004515886306762695
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 1.0,
+                "mae": 0.7182126620875765,
+                "time": 0.010967493057250977
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -1.0,
+                "mae": 0.9215490676359038,
+                "time": 72.9808087348938
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -0.9,
+                "mae": 0.9215490676359038,
+                "time": 70.82634711265564
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -0.8,
+                "mae": 0.9215490676359038,
+                "time": 71.49508833885193
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -0.7,
+                "mae": 0.9215490676359038,
+                "time": 70.52341294288635
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -0.6,
+                "mae": 0.9215490676359038,
+                "time": 70.62953615188599
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -0.5,
+                "mae": 0.9215490676359038,
+                "time": 70.74500441551208
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -0.4,
+                "mae": 0.9215490676359038,
+                "time": 70.73199963569641
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -0.3,
+                "mae": 0.9215490676359038,
+                "time": 70.58504891395569
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -0.2,
+                "mae": 0.9215490676359038,
+                "time": 70.61069250106812
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -0.1,
+                "mae": 0.9215490676359038,
+                "time": 70.56321620941162
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.0,
+                "mae": 0.9215490676359038,
+                "time": 70.62835431098938
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.1,
+                "mae": 0.921539190897598,
+                "time": 70.27684116363525
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.2,
+                "mae": 0.921539190897598,
+                "time": 70.50683236122131
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.3,
+                "mae": 0.9215046223135271,
+                "time": 70.21390104293823
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.4,
+                "mae": 0.9211350939991622,
+                "time": 70.69656181335449
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.5,
+                "mae": 0.9204622767882478,
+                "time": 70.21098732948303
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.6,
+                "mae": 0.9205060861531539,
+                "time": 70.11217522621155
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.7,
+                "mae": 0.91828530615233,
+                "time": 69.79379320144653
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.8,
+                "mae": 0.9166605230634474,
+                "time": 70.39615082740784
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.9,
+                "mae": 0.910441709141551,
+                "time": 70.04635214805603
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 1.0,
+                "mae": 0.8905395263361011,
+                "time": 70.16894435882568
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -1.0,
+                "mae": 0.8280939681937214,
+                "time": 70.51689529418945
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -0.9,
+                "mae": 0.8280939681937214,
+                "time": 70.49495005607605
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -0.8,
+                "mae": 0.8280939681937214,
+                "time": 70.37067031860352
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -0.7,
+                "mae": 0.8280939681937214,
+                "time": 69.94419455528259
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -0.6,
+                "mae": 0.8280939681937214,
+                "time": 70.00953507423401
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -0.5,
+                "mae": 0.8280939681937214,
+                "time": 70.6927592754364
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -0.4,
+                "mae": 0.8280939681937214,
+                "time": 70.52231049537659
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -0.3,
+                "mae": 0.8280939681937214,
+                "time": 70.34705853462219
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -0.2,
+                "mae": 0.8280939681937214,
+                "time": 70.61574673652649
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -0.1,
+                "mae": 0.8280939681937214,
+                "time": 70.24412369728088
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.0,
+                "mae": 0.8280939681937214,
+                "time": 69.96090292930603
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.1,
+                "mae": 0.8280715641666055,
+                "time": 69.7895176410675
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.2,
+                "mae": 0.8281513564879204,
+                "time": 69.69663596153259
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.3,
+                "mae": 0.8280437031630148,
+                "time": 70.24429368972778
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.4,
+                "mae": 0.8280747913205538,
+                "time": 69.55541682243347
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.5,
+                "mae": 0.8284882545423331,
+                "time": 69.47296237945557
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.6,
+                "mae": 0.8300151837255855,
+                "time": 69.3703715801239
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.7,
+                "mae": 0.8300039217515919,
+                "time": 69.5174024105072
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.8,
+                "mae": 0.8334559748538537,
+                "time": 69.28043127059937
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.9,
+                "mae": 0.8368804716891919,
+                "time": 69.47164583206177
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 1.0,
+                "mae": 0.837373044035215,
+                "time": 69.35004234313965
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -1.0,
+                "mae": 0.7682591537535375,
+                "time": 70.03446555137634
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -0.9,
+                "mae": 0.7682915610520247,
+                "time": 70.09038925170898
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -0.8,
+                "mae": 0.7682915610520247,
+                "time": 71.52468299865723
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -0.7,
+                "mae": 0.7682915610520247,
+                "time": 70.45862126350403
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -0.6,
+                "mae": 0.7683427507039878,
+                "time": 70.15002274513245
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -0.5,
+                "mae": 0.7683427507039878,
+                "time": 70.14136505126953
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -0.4,
+                "mae": 0.7683427507039878,
+                "time": 69.96916675567627
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -0.3,
+                "mae": 0.76833942584377,
+                "time": 70.25508332252502
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -0.2,
+                "mae": 0.7683708736096398,
+                "time": 70.58392024040222
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -0.1,
+                "mae": 0.7683343286817889,
+                "time": 73.25172567367554
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.0,
+                "mae": 0.7683024155173582,
+                "time": 70.07627654075623
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.1,
+                "mae": 0.7683474555346562,
+                "time": 70.23741412162781
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.2,
+                "mae": 0.7684908257819111,
+                "time": 69.83431458473206
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.3,
+                "mae": 0.7687334520947104,
+                "time": 70.24897027015686
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.4,
+                "mae": 0.7690236539968424,
+                "time": 70.14509963989258
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.5,
+                "mae": 0.7704814544448927,
+                "time": 69.84147930145264
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.6,
+                "mae": 0.7735819571197262,
+                "time": 69.67557096481323
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.7,
+                "mae": 0.7764714510231985,
+                "time": 69.8561635017395
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.8,
+                "mae": 0.7840045252667213,
+                "time": 69.64596843719482
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.9,
+                "mae": 0.7943493482580245,
+                "time": 69.47184181213379
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 1.0,
+                "mae": 0.8099054232756284,
+                "time": 69.41160416603088
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -1.0,
+                "mae": 0.732876627454737,
+                "time": 70.29494786262512
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -0.9,
+                "mae": 0.7323838148979318,
+                "time": 70.08299326896667
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -0.8,
+                "mae": 0.7322047701545116,
+                "time": 70.39537310600281
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -0.7,
+                "mae": 0.7321485295158804,
+                "time": 70.44524788856506
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -0.6,
+                "mae": 0.7321099765684697,
+                "time": 69.89399576187134
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -0.5,
+                "mae": 0.7320461931217375,
+                "time": 69.85029149055481
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -0.4,
+                "mae": 0.7319021729863376,
+                "time": 70.15991640090942
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -0.3,
+                "mae": 0.7317154103995838,
+                "time": 70.169508934021
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -0.2,
+                "mae": 0.731795089502551,
+                "time": 70.08771228790283
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -0.1,
+                "mae": 0.7314044952892885,
+                "time": 70.26017761230469
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.0,
+                "mae": 0.7313591001425458,
+                "time": 70.39735555648804
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.1,
+                "mae": 0.7314274784664864,
+                "time": 69.7636137008667
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.2,
+                "mae": 0.7318191584506248,
+                "time": 69.83394956588745
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.3,
+                "mae": 0.7318907333934402,
+                "time": 70.62515497207642
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.4,
+                "mae": 0.7327209817383806,
+                "time": 70.35728931427002
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.5,
+                "mae": 0.7354518136307383,
+                "time": 70.11318397521973
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.6,
+                "mae": 0.7408327986782777,
+                "time": 70.07133769989014
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.7,
+                "mae": 0.7480981630444654,
+                "time": 69.7423152923584
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.8,
+                "mae": 0.7601495968217588,
+                "time": 69.81088542938232
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.9,
+                "mae": 0.7755869878318502,
+                "time": 69.96452784538269
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 1.0,
+                "mae": 0.8007565594297578,
+                "time": 69.72527599334717
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -1.0,
+                "mae": 0.7112420953652264,
+                "time": 70.49238061904907
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -0.9,
+                "mae": 0.7112042282027087,
+                "time": 70.58004832267761
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -0.8,
+                "mae": 0.7105861747617584,
+                "time": 70.87031197547913
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -0.7,
+                "mae": 0.7104431838191482,
+                "time": 70.39444637298584
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -0.6,
+                "mae": 0.7099017714631116,
+                "time": 70.75936603546143
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -0.5,
+                "mae": 0.7096314181355734,
+                "time": 70.29829549789429
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -0.4,
+                "mae": 0.7081208036515412,
+                "time": 70.32632231712341
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -0.3,
+                "mae": 0.706624831589642,
+                "time": 70.3926796913147
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -0.2,
+                "mae": 0.7056694077783107,
+                "time": 70.25251817703247
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -0.1,
+                "mae": 0.704883861614722,
+                "time": 69.92139196395874
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.0,
+                "mae": 0.7047763975937917,
+                "time": 70.0071632862091
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.1,
+                "mae": 0.7049129994689856,
+                "time": 70.46005415916443
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.2,
+                "mae": 0.7058068569571303,
+                "time": 70.35332679748535
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.3,
+                "mae": 0.7060375530811459,
+                "time": 70.16575169563293
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.4,
+                "mae": 0.707436277144489,
+                "time": 70.28889560699463
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.5,
+                "mae": 0.7116144253585569,
+                "time": 69.88334465026855
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.6,
+                "mae": 0.7185338226875433,
+                "time": 69.61428046226501
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.7,
+                "mae": 0.7281332712429217,
+                "time": 69.78953337669373
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.8,
+                "mae": 0.7436634794392932,
+                "time": 69.62332606315613
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.9,
+                "mae": 0.76275561874018,
+                "time": 69.71249723434448
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 1.0,
+                "mae": 0.7951288891994543,
+                "time": 69.8265814781189
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -1.0,
+                "mae": 0.7259072544745606,
+                "time": 70.85469937324524
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -0.9,
+                "mae": 0.7187521029994949,
+                "time": 70.92845726013184
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -0.8,
+                "mae": 0.7138810188138307,
+                "time": 70.66623878479004
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -0.7,
+                "mae": 0.7092304336617757,
+                "time": 70.88017463684082
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -0.6,
+                "mae": 0.7049701151674546,
+                "time": 71.78447651863098
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -0.5,
+                "mae": 0.6994917558943586,
+                "time": 70.62943196296692
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -0.4,
+                "mae": 0.693604632575839,
+                "time": 70.94839692115784
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -0.3,
+                "mae": 0.6896258029544483,
+                "time": 71.01085186004639
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -0.2,
+                "mae": 0.6860709681436657,
+                "time": 70.78161478042603
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -0.1,
+                "mae": 0.6848713272171884,
+                "time": 70.58193469047546
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.0,
+                "mae": 0.6847527384777672,
+                "time": 70.70571899414062
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.1,
+                "mae": 0.6848909231541878,
+                "time": 70.37305450439453
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.2,
+                "mae": 0.68588237039175,
+                "time": 70.32608938217163
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.3,
+                "mae": 0.6863978924606691,
+                "time": 70.16870665550232
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.4,
+                "mae": 0.6884854359481883,
+                "time": 70.22226905822754
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.5,
+                "mae": 0.694075602179252,
+                "time": 70.57323956489563
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.6,
+                "mae": 0.7021377922952402,
+                "time": 70.08014130592346
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.7,
+                "mae": 0.7128234426707025,
+                "time": 69.8900876045227
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.8,
+                "mae": 0.730806379852857,
+                "time": 69.99545049667358
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.9,
+                "mae": 0.7531666516033623,
+                "time": 69.99634528160095
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 1.0,
+                "mae": 0.7908332586514071,
+                "time": 69.76043844223022
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -1.0,
+                "mae": 0.761824827337433,
+                "time": 70.99485802650452
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -0.9,
+                "mae": 0.7462838791768454,
+                "time": 70.88808178901672
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -0.8,
+                "mae": 0.735142385784412,
+                "time": 70.49106287956238
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -0.7,
+                "mae": 0.7218603495735153,
+                "time": 70.66624307632446
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -0.6,
+                "mae": 0.7099701085690401,
+                "time": 70.50744915008545
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -0.5,
+                "mae": 0.6984110835864266,
+                "time": 70.49305605888367
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -0.4,
+                "mae": 0.6854929348737507,
+                "time": 70.49297738075256
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -0.3,
+                "mae": 0.6782787115676809,
+                "time": 70.58537077903748
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -0.2,
+                "mae": 0.6740516905914433,
+                "time": 70.40738844871521
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -0.1,
+                "mae": 0.6727171703375129,
+                "time": 70.5570604801178
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.0,
+                "mae": 0.6726855920528306,
+                "time": 70.26977038383484
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.1,
+                "mae": 0.6727339253393921,
+                "time": 69.99062538146973
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.2,
+                "mae": 0.6738456261077453,
+                "time": 69.86949872970581
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.3,
+                "mae": 0.6745863223296156,
+                "time": 69.67305636405945
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.4,
+                "mae": 0.6771999276120673,
+                "time": 69.67657089233398
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.5,
+                "mae": 0.683498944944665,
+                "time": 69.62793350219727
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.6,
+                "mae": 0.6922651608942237,
+                "time": 69.79860305786133
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.7,
+                "mae": 0.7039928621101785,
+                "time": 69.49492073059082
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.8,
+                "mae": 0.723822895243199,
+                "time": 69.32692313194275
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.9,
+                "mae": 0.7478226524152254,
+                "time": 69.33647465705872
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 1.0,
+                "mae": 0.7884631058105587,
+                "time": 69.29723620414734
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -1.0,
+                "mae": 0.8661569043041163,
+                "time": 70.87090182304382
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -0.9,
+                "mae": 0.814344481617342,
+                "time": 70.9850058555603
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -0.8,
+                "mae": 0.7904022178700632,
+                "time": 70.79857897758484
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -0.7,
+                "mae": 0.7566220778569255,
+                "time": 70.63429617881775
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -0.6,
+                "mae": 0.7258434616622141,
+                "time": 70.82358050346375
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -0.5,
+                "mae": 0.6982738799378165,
+                "time": 70.56369256973267
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -0.4,
+                "mae": 0.6787596077959421,
+                "time": 70.68055415153503
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -0.3,
+                "mae": 0.6710819354147345,
+                "time": 70.46827864646912
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -0.2,
+                "mae": 0.6671410010392462,
+                "time": 70.50814628601074
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -0.1,
+                "mae": 0.6660244292505973,
+                "time": 70.27940607070923
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.0,
+                "mae": 0.6660225814983752,
+                "time": 70.4032371044159
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.1,
+                "mae": 0.6660643144944787,
+                "time": 70.09448766708374
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.2,
+                "mae": 0.6671719193324362,
+                "time": 69.92222237586975
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.3,
+                "mae": 0.6678453522078185,
+                "time": 70.11308336257935
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.4,
+                "mae": 0.670494652486837,
+                "time": 69.79561614990234
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.5,
+                "mae": 0.6770700332516468,
+                "time": 69.81997776031494
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.6,
+                "mae": 0.6863851426131705,
+                "time": 69.60531258583069
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.7,
+                "mae": 0.6990357503473738,
+                "time": 69.52917790412903
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.8,
+                "mae": 0.71986574462279,
+                "time": 69.38154339790344
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.9,
+                "mae": 0.7449178528686518,
+                "time": 69.31097197532654
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 1.0,
+                "mae": 0.7873757521923136,
+                "time": 69.46973943710327
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": -1.0,
+                "mae": 1.0115362373702872,
+                "time": 71.34014582633972
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": -0.9,
+                "mae": 0.889268164054628,
+                "time": 70.92608594894409
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": -0.8,
+                "mae": 0.839429143753971,
+                "time": 71.52012395858765
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": -0.7,
+                "mae": 0.7846185343965942,
+                "time": 71.47792744636536
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": -0.6,
+                "mae": 0.7365000688252828,
+                "time": 72.02780818939209
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": -0.5,
+                "mae": 0.6989278485917542,
+                "time": 44.22018909454346
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": -0.4,
+                "mae": 0.675593709979856,
+                "time": 35.678529024124146
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": -0.3,
+                "mae": 0.6681077063373921,
+                "time": 35.53575825691223
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": -0.2,
+                "mae": 0.6646592643857315,
+                "time": 35.12311601638794
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": -0.1,
+                "mae": 0.6638812963280128,
+                "time": 35.22539186477661
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": 0.0,
+                "mae": 0.6639450938361219,
+                "time": 35.208293199539185
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": 0.1,
+                "mae": 0.6639288383981918,
+                "time": 34.95643591880798
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": 0.2,
+                "mae": 0.6649211695704648,
+                "time": 34.850470304489136
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": 0.3,
+                "mae": 0.6656241562535993,
+                "time": 34.803518295288086
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": 0.4,
+                "mae": 0.6683953411861857,
+                "time": 34.9086172580719
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": 0.5,
+                "mae": 0.6753022848022194,
+                "time": 34.89408755302429
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": 0.6,
+                "mae": 0.684885216718014,
+                "time": 34.87401270866394
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": 0.7,
+                "mae": 0.6978697538151633,
+                "time": 34.646013498306274
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": 0.8,
+                "mae": 0.7190627465930172,
+                "time": 34.655723094940186
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": 0.9,
+                "mae": 0.7443818313747624,
+                "time": 34.522839069366455
+            },
+            {
+                "neighborhood-size": 256,
+                "sim-threshold": 1.0,
+                "mae": 0.7872532521128676,
+                "time": 34.56529116630554
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": -1.0,
+                "mae": 1.1809603591922713,
+                "time": 35.55682635307312
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": -0.9,
+                "mae": 0.9627175067558005,
+                "time": 35.72522759437561
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": -0.8,
+                "mae": 0.8834800743735106,
+                "time": 35.4175009727478
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": -0.7,
+                "mae": 0.8022294064968666,
+                "time": 35.27912163734436
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": -0.6,
+                "mae": 0.7391998648498941,
+                "time": 35.37342715263367
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": -0.5,
+                "mae": 0.697001112885438,
+                "time": 35.104986906051636
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": -0.4,
+                "mae": 0.673429951098757,
+                "time": 35.080793142318726
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": -0.3,
+                "mae": 0.667108042120928,
+                "time": 35.07087254524231
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": -0.2,
+                "mae": 0.6643287359419713,
+                "time": 35.026496171951294
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": -0.1,
+                "mae": 0.6638291287979221,
+                "time": 35.04022836685181
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": 0.0,
+                "mae": 0.663939084459184,
+                "time": 35.32355833053589
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": 0.1,
+                "mae": 0.6639208156791823,
+                "time": 34.96299958229065
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": 0.2,
+                "mae": 0.6649266814611897,
+                "time": 34.95204830169678
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": 0.3,
+                "mae": 0.6656490133483296,
+                "time": 34.953794717788696
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": 0.4,
+                "mae": 0.6684247271979263,
+                "time": 34.963483572006226
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": 0.5,
+                "mae": 0.675314677657937,
+                "time": 34.744279861450195
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": 0.6,
+                "mae": 0.684885659219697,
+                "time": 34.79904222488403
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": 0.7,
+                "mae": 0.6978760563094418,
+                "time": 34.83002042770386
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": 0.8,
+                "mae": 0.7190618688651694,
+                "time": 34.8957896232605
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": 0.9,
+                "mae": 0.7443809742719889,
+                "time": 34.67311215400696
+            },
+            {
+                "neighborhood-size": 512,
+                "sim-threshold": 1.0,
+                "mae": 0.7872507786432729,
+                "time": 34.55245304107666
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": -1.0,
+                "mae": 1.3393307350909252,
+                "time": 35.3605375289917
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": -0.9,
+                "mae": 0.9835086949360955,
+                "time": 35.23299026489258
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": -0.8,
+                "mae": 0.8902443152111529,
+                "time": 35.24685025215149
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": -0.7,
+                "mae": 0.8033566717506623,
+                "time": 35.195717573165894
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": -0.6,
+                "mae": 0.7388203071564854,
+                "time": 35.18516659736633
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": -0.5,
+                "mae": 0.6963664750442154,
+                "time": 35.14508247375488
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": -0.4,
+                "mae": 0.6731388133008872,
+                "time": 35.09525156021118
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": -0.3,
+                "mae": 0.6670368907141268,
+                "time": 35.08485198020935
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": -0.2,
+                "mae": 0.6643254448042478,
+                "time": 35.06724238395691
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": -0.1,
+                "mae": 0.6638282145199386,
+                "time": 35.002480030059814
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": 0.0,
+                "mae": 0.663939084459184,
+                "time": 34.955289363861084
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": 0.1,
+                "mae": 0.6639208156791823,
+                "time": 34.8140127658844
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": 0.2,
+                "mae": 0.6649266814611897,
+                "time": 34.80180907249451
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": 0.3,
+                "mae": 0.6656490133483296,
+                "time": 34.72109580039978
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": 0.4,
+                "mae": 0.6684247271979263,
+                "time": 34.68477773666382
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": 0.5,
+                "mae": 0.675314677657937,
+                "time": 34.63381791114807
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": 0.6,
+                "mae": 0.684885659219697,
+                "time": 34.57173776626587
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": 0.7,
+                "mae": 0.6978760563094418,
+                "time": 34.50288248062134
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": 0.8,
+                "mae": 0.7190618688651694,
+                "time": 34.513570070266724
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": 0.9,
+                "mae": 0.7443809742719889,
+                "time": 34.46784257888794
+            },
+            {
+                "neighborhood-size": 1024,
+                "sim-threshold": 1.0,
+                "mae": 0.7872507786432729,
+                "time": 34.42778921127319
+            }
+        ],
+        "size-and-absolute-threshold": [
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.0,
+                "mae": 0.7182126620875765,
+                "time": 0.0062503814697265625
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.1,
+                "mae": 0.7182126620875765,
+                "time": 0.006318330764770508
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.2,
+                "mae": 0.7182126620875765,
+                "time": 0.006326436996459961
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.3,
+                "mae": 0.7182126620875765,
+                "time": 0.006293773651123047
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.4,
+                "mae": 0.7182126620875765,
+                "time": 0.006317615509033203
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.5,
+                "mae": 0.7182126620875765,
+                "time": 0.006279468536376953
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.6,
+                "mae": 0.7182126620875765,
+                "time": 0.006276845932006836
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.7,
+                "mae": 0.7182126620875765,
+                "time": 0.006276845932006836
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.8,
+                "mae": 0.7182126620875765,
+                "time": 0.006276607513427734
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.9,
+                "mae": 0.7182126620875765,
+                "time": 0.006307840347290039
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 1.0,
+                "mae": 0.7182126620875765,
+                "time": 0.006294727325439453
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.0,
+                "mae": 0.9750069137168141,
+                "time": 34.730053186416626
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.1,
+                "mae": 0.9750069137168141,
+                "time": 34.7022488117218
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.2,
+                "mae": 0.9750069137168141,
+                "time": 34.64509677886963
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.3,
+                "mae": 0.9750069137168141,
+                "time": 34.648658990859985
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.4,
+                "mae": 0.974931572826346,
+                "time": 34.6345489025116
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.5,
+                "mae": 0.9743454507610343,
+                "time": 34.578481674194336
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.6,
+                "mae": 0.9736328748191293,
+                "time": 34.548187494277954
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.7,
+                "mae": 0.9716483740947243,
+                "time": 34.5200879573822
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.8,
+                "mae": 0.9695127012870768,
+                "time": 34.49076795578003
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.9,
+                "mae": 0.9596222647343972,
+                "time": 34.47070527076721
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 1.0,
+                "mae": 0.928336457962486,
+                "time": 34.476537227630615
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.0,
+                "mae": 0.9989623344879328,
+                "time": 34.731433629989624
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.1,
+                "mae": 0.9989623344879328,
+                "time": 34.6779510974884
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.2,
+                "mae": 0.9989623344879328,
+                "time": 34.665627241134644
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.3,
+                "mae": 0.9989623344879328,
+                "time": 34.640629291534424
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.4,
+                "mae": 0.9981705158721345,
+                "time": 34.6065034866333
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.5,
+                "mae": 0.9962997953572482,
+                "time": 34.60126709938049
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.6,
+                "mae": 0.9937155029223019,
+                "time": 34.60230326652527
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.7,
+                "mae": 0.9861192387603824,
+                "time": 34.64286541938782
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.8,
+                "mae": 0.9760682372058274,
+                "time": 34.521474838256836
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.9,
+                "mae": 0.950579064106487,
+                "time": 34.49343276023865
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 1.0,
+                "mae": 0.8831344651255654,
+                "time": 34.472373723983765
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.0,
+                "mae": 1.0761409213969029,
+                "time": 34.78350472450256
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.1,
+                "mae": 1.0760782155932396,
+                "time": 34.69356989860535
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.2,
+                "mae": 1.076363596951437,
+                "time": 34.6792049407959
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.3,
+                "mae": 1.076351896738463,
+                "time": 34.626354694366455
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.4,
+                "mae": 1.0747867864650518,
+                "time": 34.60964488983154
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.5,
+                "mae": 1.072292911395091,
+                "time": 34.614007234573364
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.6,
+                "mae": 1.070224261211353,
+                "time": 34.61075687408447
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.7,
+                "mae": 1.065106438026474,
+                "time": 34.56489586830139
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.8,
+                "mae": 1.0548394057795631,
+                "time": 34.52720665931702
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.9,
+                "mae": 1.0267024421694098,
+                "time": 34.50596213340759
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 1.0,
+                "mae": 0.934616183316988,
+                "time": 34.4889121055603
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.0,
+                "mae": 1.1211268506783367,
+                "time": 34.83592653274536
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.1,
+                "mae": 1.1223564702762059,
+                "time": 34.75081920623779
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.2,
+                "mae": 1.1225926363251932,
+                "time": 34.77086138725281
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.3,
+                "mae": 1.1229367488770723,
+                "time": 34.72473096847534
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.4,
+                "mae": 1.1225169897165672,
+                "time": 34.687339305877686
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.5,
+                "mae": 1.121250659680002,
+                "time": 34.63265562057495
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.6,
+                "mae": 1.115003800332709,
+                "time": 34.63337421417236
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.7,
+                "mae": 1.113762530947246,
+                "time": 34.63240838050842
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.8,
+                "mae": 1.112692291287987,
+                "time": 34.57616114616394
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.9,
+                "mae": 1.0888325848419367,
+                "time": 34.50572204589844
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 1.0,
+                "mae": 0.9802259396011657,
+                "time": 34.485356092453
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.0,
+                "mae": 1.14678850130817,
+                "time": 34.889739751815796
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.1,
+                "mae": 1.146946613697007,
+                "time": 34.86555600166321
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.2,
+                "mae": 1.1476811289416344,
+                "time": 34.80477333068848
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.3,
+                "mae": 1.1470048854051647,
+                "time": 34.735660791397095
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.4,
+                "mae": 1.147260924260752,
+                "time": 34.758063316345215
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.5,
+                "mae": 1.148713155992785,
+                "time": 34.72874331474304
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.6,
+                "mae": 1.144625288827639,
+                "time": 34.679033279418945
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.7,
+                "mae": 1.1468884767609537,
+                "time": 34.647469997406006
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.8,
+                "mae": 1.147456427049728,
+                "time": 34.6168098449707
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.9,
+                "mae": 1.1246365032771635,
+                "time": 35.22170901298523
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 1.0,
+                "mae": 1.0040109379106321,
+                "time": 34.80032968521118
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.0,
+                "mae": 1.163454744851031,
+                "time": 35.11602544784546
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.1,
+                "mae": 1.1627844136937984,
+                "time": 35.18803572654724
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.2,
+                "mae": 1.1620446638445494,
+                "time": 35.3791663646698
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.3,
+                "mae": 1.1630753713702189,
+                "time": 34.98771548271179
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.4,
+                "mae": 1.1639716955996031,
+                "time": 34.968563079833984
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.5,
+                "mae": 1.1707970988577743,
+                "time": 35.0730254650116
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.6,
+                "mae": 1.1667719361400026,
+                "time": 34.76136589050293
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.7,
+                "mae": 1.1789069075024257,
+                "time": 34.72943711280823
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.8,
+                "mae": 1.1731927672521347,
+                "time": 34.6504123210907
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.9,
+                "mae": 1.1518569527028029,
+                "time": 34.60413718223572
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 1.0,
+                "mae": 1.0133724342905186,
+                "time": 34.503137826919556
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.0,
+                "mae": 1.2095635804675327,
+                "time": 35.24762463569641
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.1,
+                "mae": 1.2087050365666923,
+                "time": 35.152953147888184
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.2,
+                "mae": 1.2054870853822846,
+                "time": 35.76170754432678
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.3,
+                "mae": 1.2097071653851754,
+                "time": 35.090964555740356
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.4,
+                "mae": 1.208211476573316,
+                "time": 35.03170728683472
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.5,
+                "mae": 1.2175993468806634,
+                "time": 34.90990233421326
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.6,
+                "mae": 1.2143769555359298,
+                "time": 34.834410190582275
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.7,
+                "mae": 1.2261751372029155,
+                "time": 34.757662534713745
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.8,
+                "mae": 1.218989541666851,
+                "time": 34.702529430389404
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.9,
+                "mae": 1.1893615688012562,
+                "time": 34.629621267318726
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 1.0,
+                "mae": 1.0213505611762126,
+                "time": 34.526713371276855
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.0,
+                "mae": 1.2646304430666082,
+                "time": 35.526938676834106
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.1,
+                "mae": 1.2648830799796815,
+                "time": 35.32280230522156
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.2,
+                "mae": 1.2617770045507881,
+                "time": 35.26345658302307
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.3,
+                "mae": 1.2659425786558678,
+                "time": 36.49911379814148
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.4,
+                "mae": 1.2642577079099806,
+                "time": 35.890629053115845
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.5,
+                "mae": 1.2711886519471876,
+                "time": 35.68865752220154
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.6,
+                "mae": 1.2649590095382148,
+                "time": 35.902297019958496
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.7,
+                "mae": 1.2727119652013534,
+                "time": 35.416714906692505
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.8,
+                "mae": 1.2594140585979123,
+                "time": 35.37242364883423
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.9,
+                "mae": 1.216246022782641,
+                "time": 35.43610596656799
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 1.0,
+                "mae": 1.0216658519321238,
+                "time": 35.17354726791382
+            },
+            {
+                "neighborhood-size": 256,
+                "absolute-sim-threshold": 0.0,
+                "mae": 1.308998479863751,
+                "time": 36.34761691093445
+            },
+            {
+                "neighborhood-size": 256,
+                "absolute-sim-threshold": 0.1,
+                "mae": 1.309672003447904,
+                "time": 36.25721716880798
+            },
+            {
+                "neighborhood-size": 256,
+                "absolute-sim-threshold": 0.2,
+                "mae": 1.3057795444410596,
+                "time": 36.20674967765808
+            },
+            {
+                "neighborhood-size": 256,
+                "absolute-sim-threshold": 0.3,
+                "mae": 1.3110226392683955,
+                "time": 35.84729981422424
+            },
+            {
+                "neighborhood-size": 256,
+                "absolute-sim-threshold": 0.4,
+                "mae": 1.3111094186654872,
+                "time": 35.661455154418945
+            },
+            {
+                "neighborhood-size": 256,
+                "absolute-sim-threshold": 0.5,
+                "mae": 1.3204180899960778,
+                "time": 35.82395839691162
+            },
+            {
+                "neighborhood-size": 256,
+                "absolute-sim-threshold": 0.6,
+                "mae": 1.3111271386804768,
+                "time": 35.671879529953
+            },
+            {
+                "neighborhood-size": 256,
+                "absolute-sim-threshold": 0.7,
+                "mae": 1.3164300700249914,
+                "time": 35.39610505104065
+            },
+            {
+                "neighborhood-size": 256,
+                "absolute-sim-threshold": 0.8,
+                "mae": 1.2955080948091031,
+                "time": 35.496630907058716
+            },
+            {
+                "neighborhood-size": 256,
+                "absolute-sim-threshold": 0.9,
+                "mae": 1.2368572700442941,
+                "time": 35.3988471031189
+            },
+            {
+                "neighborhood-size": 256,
+                "absolute-sim-threshold": 1.0,
+                "mae": 1.0184796683727906,
+                "time": 35.45240592956543
+            },
+            {
+                "neighborhood-size": 512,
+                "absolute-sim-threshold": 0.0,
+                "mae": 1.3372691013032727,
+                "time": 36.41231179237366
+            },
+            {
+                "neighborhood-size": 512,
+                "absolute-sim-threshold": 0.1,
+                "mae": 1.3386321267041708,
+                "time": 36.404372692108154
+            },
+            {
+                "neighborhood-size": 512,
+                "absolute-sim-threshold": 0.2,
+                "mae": 1.335488045293925,
+                "time": 36.46052598953247
+            },
+            {
+                "neighborhood-size": 512,
+                "absolute-sim-threshold": 0.3,
+                "mae": 1.340472272603451,
+                "time": 36.05596327781677
+            },
+            {
+                "neighborhood-size": 512,
+                "absolute-sim-threshold": 0.4,
+                "mae": 1.3415915258859052,
+                "time": 36.30812048912048
+            },
+            {
+                "neighborhood-size": 512,
+                "absolute-sim-threshold": 0.5,
+                "mae": 1.348947525843802,
+                "time": 35.58685350418091
+            },
+            {
+                "neighborhood-size": 512,
+                "absolute-sim-threshold": 0.6,
+                "mae": 1.3367652932749172,
+                "time": 35.59106731414795
+            },
+            {
+                "neighborhood-size": 512,
+                "absolute-sim-threshold": 0.7,
+                "mae": 1.3372081287671844,
+                "time": 35.47134613990784
+            },
+            {
+                "neighborhood-size": 512,
+                "absolute-sim-threshold": 0.8,
+                "mae": 1.3098544811051291,
+                "time": 35.24119329452515
+            },
+            {
+                "neighborhood-size": 512,
+                "absolute-sim-threshold": 0.9,
+                "mae": 1.2461206717115378,
+                "time": 35.384746074676514
+            },
+            {
+                "neighborhood-size": 512,
+                "absolute-sim-threshold": 1.0,
+                "mae": 1.0178970291087004,
+                "time": 35.356712102890015
+            },
+            {
+                "neighborhood-size": 1024,
+                "absolute-sim-threshold": 0.0,
+                "mae": 1.3393307350909254,
+                "time": 36.38082981109619
+            },
+            {
+                "neighborhood-size": 1024,
+                "absolute-sim-threshold": 0.1,
+                "mae": 1.3411850796985512,
+                "time": 36.099881410598755
+            },
+            {
+                "neighborhood-size": 1024,
+                "absolute-sim-threshold": 0.2,
+                "mae": 1.3381397563189428,
+                "time": 36.13621783256531
+            },
+            {
+                "neighborhood-size": 1024,
+                "absolute-sim-threshold": 0.3,
+                "mae": 1.341908790904341,
+                "time": 35.745179891586304
+            },
+            {
+                "neighborhood-size": 1024,
+                "absolute-sim-threshold": 0.4,
+                "mae": 1.3435965976821629,
+                "time": 36.0552544593811
+            },
+            {
+                "neighborhood-size": 1024,
+                "absolute-sim-threshold": 0.5,
+                "mae": 1.3502340099238008,
+                "time": 35.2879376411438
+            },
+            {
+                "neighborhood-size": 1024,
+                "absolute-sim-threshold": 0.6,
+                "mae": 1.3370006988589933,
+                "time": 34.9810426235199
+            },
+            {
+                "neighborhood-size": 1024,
+                "absolute-sim-threshold": 0.7,
+                "mae": 1.3372123283450583,
+                "time": 34.896960735321045
+            },
+            {
+                "neighborhood-size": 1024,
+                "absolute-sim-threshold": 0.8,
+                "mae": 1.309877909428601,
+                "time": 34.91085171699524
+            },
+            {
+                "neighborhood-size": 1024,
+                "absolute-sim-threshold": 0.9,
+                "mae": 1.246129878847801,
+                "time": 34.73177886009216
+            },
+            {
+                "neighborhood-size": 1024,
+                "absolute-sim-threshold": 1.0,
+                "mae": 1.0178970291087004,
+                "time": 34.62049055099487
+            }
         ]
     },
     "user-based": {
@@ -9127,6 +11435,1738 @@
                 "absolute-sim-threshold": 1.0,
                 "mae": 0.7451078467040966,
                 "time": 46.52497601509094
+            }
+        ],
+        "size-and-threshold": [
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -1.0,
+                "mae": 0.7182126620875765,
+                "time": 0.004662036895751953
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -0.9,
+                "mae": 0.7182126620875765,
+                "time": 0.004735231399536133
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -0.8,
+                "mae": 0.7182126620875765,
+                "time": 0.01736617088317871
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -0.7,
+                "mae": 0.7182126620875765,
+                "time": 0.0047495365142822266
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -0.6,
+                "mae": 0.7182126620875765,
+                "time": 0.01101541519165039
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -0.5,
+                "mae": 0.7182126620875765,
+                "time": 0.0047647953033447266
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -0.4,
+                "mae": 0.7182126620875765,
+                "time": 0.011087656021118164
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -0.3,
+                "mae": 0.7182126620875765,
+                "time": 0.004875659942626953
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -0.2,
+                "mae": 0.7182126620875765,
+                "time": 0.005030393600463867
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": -0.1,
+                "mae": 0.7182126620875765,
+                "time": 0.005137443542480469
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.0,
+                "mae": 0.7182126620875765,
+                "time": 0.004655599594116211
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.1,
+                "mae": 0.7182126620875765,
+                "time": 0.004823446273803711
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.2,
+                "mae": 0.7182126620875765,
+                "time": 0.023759126663208008
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.3,
+                "mae": 0.7182126620875765,
+                "time": 0.017330646514892578
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.4,
+                "mae": 0.7182126620875765,
+                "time": 0.0173947811126709
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.5,
+                "mae": 0.7182126620875765,
+                "time": 0.011111974716186523
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.6,
+                "mae": 0.7182126620875765,
+                "time": 0.011060237884521484
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.7,
+                "mae": 0.7182126620875765,
+                "time": 0.011132240295410156
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.8,
+                "mae": 0.7182126620875765,
+                "time": 0.004833221435546875
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 0.9,
+                "mae": 0.7182126620875765,
+                "time": 0.0049211978912353516
+            },
+            {
+                "neighborhood-size": 0,
+                "sim-threshold": 1.0,
+                "mae": 0.7182126620875765,
+                "time": 0.004862785339355469
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -1.0,
+                "mae": 0.8342108571235942,
+                "time": 49.746259689331055
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -0.9,
+                "mae": 0.8342108571235942,
+                "time": 47.47088575363159
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -0.8,
+                "mae": 0.8342108571235942,
+                "time": 47.26971435546875
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -0.7,
+                "mae": 0.8342108571235942,
+                "time": 47.81256580352783
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -0.6,
+                "mae": 0.8342108571235942,
+                "time": 47.10376596450806
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -0.5,
+                "mae": 0.8342108571235942,
+                "time": 47.091986656188965
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -0.4,
+                "mae": 0.8342108571235942,
+                "time": 47.099644899368286
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -0.3,
+                "mae": 0.8342108571235942,
+                "time": 47.35585880279541
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -0.2,
+                "mae": 0.8342213442221326,
+                "time": 47.17966675758362
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": -0.1,
+                "mae": 0.8342567973205242,
+                "time": 47.26301026344299
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.0,
+                "mae": 0.8342644551845412,
+                "time": 47.272356033325195
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.1,
+                "mae": 0.8339003074332253,
+                "time": 46.951141119003296
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.2,
+                "mae": 0.8316994101776672,
+                "time": 47.293452978134155
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.3,
+                "mae": 0.8266522149672842,
+                "time": 47.19393539428711
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.4,
+                "mae": 0.8140994610616233,
+                "time": 47.221216917037964
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.5,
+                "mae": 0.7904424149493999,
+                "time": 46.976083755493164
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.6,
+                "mae": 0.7717537575518862,
+                "time": 47.02938723564148
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.7,
+                "mae": 0.7611427237456513,
+                "time": 46.99339056015015
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.8,
+                "mae": 0.747650517828024,
+                "time": 46.9945809841156
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 0.9,
+                "mae": 0.7429905350628504,
+                "time": 47.01890182495117
+            },
+            {
+                "neighborhood-size": 1,
+                "sim-threshold": 1.0,
+                "mae": 0.7371178845664174,
+                "time": 47.17556977272034
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -1.0,
+                "mae": 0.7516099078811787,
+                "time": 47.33046340942383
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -0.9,
+                "mae": 0.7516099078811787,
+                "time": 47.17807149887085
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -0.8,
+                "mae": 0.7516099078811787,
+                "time": 47.23296904563904
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -0.7,
+                "mae": 0.7516099078811787,
+                "time": 46.7666552066803
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -0.6,
+                "mae": 0.7516099078811787,
+                "time": 46.991053104400635
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -0.5,
+                "mae": 0.7516099078811787,
+                "time": 46.91722655296326
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -0.4,
+                "mae": 0.7516099078811787,
+                "time": 47.33508610725403
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -0.3,
+                "mae": 0.751619742615191,
+                "time": 47.103511095047
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -0.2,
+                "mae": 0.7515851379131124,
+                "time": 46.703206300735474
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": -0.1,
+                "mae": 0.751553209125505,
+                "time": 47.12266778945923
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.0,
+                "mae": 0.7513440562645295,
+                "time": 47.012240171432495
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.1,
+                "mae": 0.7510561985906284,
+                "time": 47.12830948829651
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.2,
+                "mae": 0.751141913229109,
+                "time": 46.92369055747986
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.3,
+                "mae": 0.7517237483895591,
+                "time": 47.026447057724
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.4,
+                "mae": 0.7530504125457235,
+                "time": 46.660590171813965
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.5,
+                "mae": 0.7565714623977563,
+                "time": 46.67874503135681
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.6,
+                "mae": 0.7532426486737034,
+                "time": 46.847707748413086
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.7,
+                "mae": 0.749775316348564,
+                "time": 47.12799787521362
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.8,
+                "mae": 0.7401553605275505,
+                "time": 47.12558364868164
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 0.9,
+                "mae": 0.7381359938980447,
+                "time": 47.36243796348572
+            },
+            {
+                "neighborhood-size": 2,
+                "sim-threshold": 1.0,
+                "mae": 0.7346088510570009,
+                "time": 46.9805269241333
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -1.0,
+                "mae": 0.6987068790831803,
+                "time": 47.2213020324707
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -0.9,
+                "mae": 0.6986665726987769,
+                "time": 47.43692135810852
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -0.8,
+                "mae": 0.6986665726987769,
+                "time": 47.265970945358276
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -0.7,
+                "mae": 0.6986665726987769,
+                "time": 46.925524950027466
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -0.6,
+                "mae": 0.6985938130673354,
+                "time": 46.656206130981445
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -0.5,
+                "mae": 0.6985660152718557,
+                "time": 46.73270010948181
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -0.4,
+                "mae": 0.6984391951496027,
+                "time": 46.6899995803833
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -0.3,
+                "mae": 0.698502096204914,
+                "time": 46.61066436767578
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -0.2,
+                "mae": 0.6985248091668727,
+                "time": 47.41858267784119
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": -0.1,
+                "mae": 0.6965230808101885,
+                "time": 46.69316387176514
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.0,
+                "mae": 0.6956736397662655,
+                "time": 46.613630056381226
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.1,
+                "mae": 0.695822314844931,
+                "time": 46.693307876586914
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.2,
+                "mae": 0.6987451144835621,
+                "time": 46.59139323234558
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.3,
+                "mae": 0.7069756528749966,
+                "time": 46.52079176902771
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.4,
+                "mae": 0.7201071790927346,
+                "time": 46.78367352485657
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.5,
+                "mae": 0.7396915354262128,
+                "time": 46.52364158630371
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.6,
+                "mae": 0.7438641503084648,
+                "time": 46.52750897407532
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.7,
+                "mae": 0.7437814646074923,
+                "time": 46.75655770301819
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.8,
+                "mae": 0.7366709998905858,
+                "time": 46.41061735153198
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 0.9,
+                "mae": 0.7361668324470683,
+                "time": 46.47162652015686
+            },
+            {
+                "neighborhood-size": 4,
+                "sim-threshold": 1.0,
+                "mae": 0.7334055958900281,
+                "time": 46.49012207984924
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -1.0,
+                "mae": 0.6910419681713088,
+                "time": 46.66163468360901
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -0.9,
+                "mae": 0.6898490134288187,
+                "time": 46.6649284362793
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -0.8,
+                "mae": 0.6889232350981354,
+                "time": 46.85541486740112
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -0.7,
+                "mae": 0.6877753311597286,
+                "time": 48.56974983215332
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -0.6,
+                "mae": 0.6872548710241753,
+                "time": 47.178364992141724
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -0.5,
+                "mae": 0.686735382732661,
+                "time": 46.7774658203125
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -0.4,
+                "mae": 0.6832903844912771,
+                "time": 46.865041732788086
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -0.3,
+                "mae": 0.6795368809449153,
+                "time": 46.74159550666809
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -0.2,
+                "mae": 0.6774813342692336,
+                "time": 46.83250069618225
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": -0.1,
+                "mae": 0.6711529549703387,
+                "time": 47.017857789993286
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.0,
+                "mae": 0.6694582464583109,
+                "time": 46.89307999610901
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.1,
+                "mae": 0.6699776312072688,
+                "time": 46.97524642944336
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.2,
+                "mae": 0.6763608791984441,
+                "time": 50.430092096328735
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.3,
+                "mae": 0.6907283763725458,
+                "time": 47.32946562767029
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.4,
+                "mae": 0.7099049901589798,
+                "time": 46.8645544052124
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.5,
+                "mae": 0.7351475498432849,
+                "time": 46.96589994430542
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.6,
+                "mae": 0.7413218431482479,
+                "time": 46.855555057525635
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.7,
+                "mae": 0.7423991281533074,
+                "time": 46.49760031700134
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.8,
+                "mae": 0.7358016462305281,
+                "time": 46.94252371788025
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 0.9,
+                "mae": 0.73541886519754,
+                "time": 47.147711515426636
+            },
+            {
+                "neighborhood-size": 8,
+                "sim-threshold": 1.0,
+                "mae": 0.7331154343997386,
+                "time": 46.419055700302124
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -1.0,
+                "mae": 0.7051959597176461,
+                "time": 47.08077645301819
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -0.9,
+                "mae": 0.7001713313036905,
+                "time": 46.703035831451416
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -0.8,
+                "mae": 0.6986136899553409,
+                "time": 46.832520484924316
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -0.7,
+                "mae": 0.696638775051259,
+                "time": 46.87054514884949
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -0.6,
+                "mae": 0.6959569015131788,
+                "time": 46.77670478820801
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -0.5,
+                "mae": 0.6939788006740062,
+                "time": 46.83127999305725
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -0.4,
+                "mae": 0.6885922064252533,
+                "time": 46.76960349082947
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -0.3,
+                "mae": 0.6822236688591015,
+                "time": 46.662450313568115
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -0.2,
+                "mae": 0.6752876136888647,
+                "time": 46.61041307449341
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": -0.1,
+                "mae": 0.6654550079111562,
+                "time": 46.697073221206665
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.0,
+                "mae": 0.6631886624875676,
+                "time": 46.61326718330383
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.1,
+                "mae": 0.6638000454578262,
+                "time": 46.651891231536865
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.2,
+                "mae": 0.6708386544355284,
+                "time": 46.748855113983154
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.3,
+                "mae": 0.6870806102545051,
+                "time": 46.83481287956238
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.4,
+                "mae": 0.7076674074326627,
+                "time": 46.83933663368225
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.5,
+                "mae": 0.7339808330425511,
+                "time": 46.5770149230957
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.6,
+                "mae": 0.7407021121409796,
+                "time": 46.56782269477844
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.7,
+                "mae": 0.7422114680483399,
+                "time": 46.53143882751465
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.8,
+                "mae": 0.7356623359804079,
+                "time": 46.77217435836792
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 0.9,
+                "mae": 0.7354324199345786,
+                "time": 46.61442685127258
+            },
+            {
+                "neighborhood-size": 16,
+                "sim-threshold": 1.0,
+                "mae": 0.733109643129861,
+                "time": 46.43911290168762
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -1.0,
+                "mae": 0.7200502734791951,
+                "time": 46.93546175956726
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -0.9,
+                "mae": 0.7127799105087841,
+                "time": 46.98093128204346
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -0.8,
+                "mae": 0.710916980161601,
+                "time": 46.90817141532898
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -0.7,
+                "mae": 0.7071841463400409,
+                "time": 47.14601111412048
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -0.6,
+                "mae": 0.7051257562860123,
+                "time": 46.73039364814758
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -0.5,
+                "mae": 0.7019917536488692,
+                "time": 46.76166534423828
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -0.4,
+                "mae": 0.6927618306550487,
+                "time": 46.7751739025116
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -0.3,
+                "mae": 0.68369343603711,
+                "time": 47.35602045059204
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -0.2,
+                "mae": 0.6751417332321477,
+                "time": 46.98998498916626
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": -0.1,
+                "mae": 0.6648828503347591,
+                "time": 47.17685317993164
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.0,
+                "mae": 0.6627114047583846,
+                "time": 47.12470269203186
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.1,
+                "mae": 0.663298306843111,
+                "time": 46.967321157455444
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.2,
+                "mae": 0.6705453253603045,
+                "time": 47.102306604385376
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.3,
+                "mae": 0.6869023316350527,
+                "time": 47.02707099914551
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.4,
+                "mae": 0.7073976152945808,
+                "time": 46.878981828689575
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.5,
+                "mae": 0.7338205511885919,
+                "time": 46.50796437263489
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.6,
+                "mae": 0.7406423531506372,
+                "time": 46.78638458251953
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.7,
+                "mae": 0.7421773957602292,
+                "time": 46.853660583496094
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.8,
+                "mae": 0.735651309701785,
+                "time": 46.918163776397705
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 0.9,
+                "mae": 0.7354324199345786,
+                "time": 46.685402631759644
+            },
+            {
+                "neighborhood-size": 32,
+                "sim-threshold": 1.0,
+                "mae": 0.733109643129861,
+                "time": 46.73090362548828
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -1.0,
+                "mae": 0.7286475195867044,
+                "time": 47.214518547058105
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -0.9,
+                "mae": 0.7191114111632616,
+                "time": 47.134965658187866
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -0.8,
+                "mae": 0.7169973855547593,
+                "time": 46.912904024124146
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -0.7,
+                "mae": 0.7113362491741604,
+                "time": 47.14729452133179
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -0.6,
+                "mae": 0.7087756006829237,
+                "time": 46.80520462989807
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -0.5,
+                "mae": 0.70474225273718,
+                "time": 46.97851324081421
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -0.4,
+                "mae": 0.6944760685158223,
+                "time": 46.90647554397583
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -0.3,
+                "mae": 0.6837736788455712,
+                "time": 46.87681293487549
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -0.2,
+                "mae": 0.6751547575061856,
+                "time": 47.00067210197449
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": -0.1,
+                "mae": 0.665021738276113,
+                "time": 46.797133922576904
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.0,
+                "mae": 0.6629454046241327,
+                "time": 46.72790241241455
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.1,
+                "mae": 0.6635042467001501,
+                "time": 46.47453570365906
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.2,
+                "mae": 0.6706810293812435,
+                "time": 46.51732563972473
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.3,
+                "mae": 0.6869277770970033,
+                "time": 46.69019627571106
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.4,
+                "mae": 0.7073984319266674,
+                "time": 46.79288959503174
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.5,
+                "mae": 0.7338232873775229,
+                "time": 46.90552544593811
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.6,
+                "mae": 0.7406425576513092,
+                "time": 46.97664999961853
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.7,
+                "mae": 0.7421773957602292,
+                "time": 46.91875863075256
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.8,
+                "mae": 0.735651309701785,
+                "time": 46.77099347114563
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 0.9,
+                "mae": 0.7354324199345786,
+                "time": 46.77346587181091
+            },
+            {
+                "neighborhood-size": 64,
+                "sim-threshold": 1.0,
+                "mae": 0.733109643129861,
+                "time": 46.695228099823
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -1.0,
+                "mae": 0.7292932259833105,
+                "time": 46.704591035842896
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -0.9,
+                "mae": 0.7196980921916134,
+                "time": 46.640451431274414
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -0.8,
+                "mae": 0.7172964959379662,
+                "time": 46.7201828956604
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -0.7,
+                "mae": 0.7113504617789191,
+                "time": 46.61011862754822
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -0.6,
+                "mae": 0.708754665321303,
+                "time": 46.748286485672
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -0.5,
+                "mae": 0.7049031658260027,
+                "time": 46.86470341682434
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -0.4,
+                "mae": 0.6946282203667786,
+                "time": 47.03640151023865
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -0.3,
+                "mae": 0.6837751518961573,
+                "time": 46.881500244140625
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -0.2,
+                "mae": 0.6751652740110378,
+                "time": 47.08273005485535
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": -0.1,
+                "mae": 0.6650194403442306,
+                "time": 46.79102945327759
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.0,
+                "mae": 0.6629457780121525,
+                "time": 46.95379710197449
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.1,
+                "mae": 0.6635046371058918,
+                "time": 46.892088413238525
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.2,
+                "mae": 0.6706810293812435,
+                "time": 46.85896825790405
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.3,
+                "mae": 0.6869277770970033,
+                "time": 46.91183638572693
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.4,
+                "mae": 0.7073984319266674,
+                "time": 48.11632680892944
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.5,
+                "mae": 0.7338232873775229,
+                "time": 46.86642241477966
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.6,
+                "mae": 0.7406425576513092,
+                "time": 47.27981901168823
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.7,
+                "mae": 0.7421773957602292,
+                "time": 46.95069885253906
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.8,
+                "mae": 0.735651309701785,
+                "time": 46.97887587547302
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 0.9,
+                "mae": 0.7354324199345786,
+                "time": 46.791735887527466
+            },
+            {
+                "neighborhood-size": 128,
+                "sim-threshold": 1.0,
+                "mae": 0.733109643129861,
+                "time": 46.89803862571716
+            }
+        ],
+        "size-and-absolute-threshold": [
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.0,
+                "mae": 0.7182126620875765,
+                "time": 0.013069868087768555
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.1,
+                "mae": 0.7182126620875765,
+                "time": 0.021397113800048828
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.2,
+                "mae": 0.7182126620875765,
+                "time": 0.00654911994934082
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.3,
+                "mae": 0.7182126620875765,
+                "time": 0.01282501220703125
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.4,
+                "mae": 0.7182126620875765,
+                "time": 0.006573915481567383
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.5,
+                "mae": 0.7182126620875765,
+                "time": 0.012801170349121094
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.6,
+                "mae": 0.7182126620875765,
+                "time": 0.019134998321533203
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.7,
+                "mae": 0.7182126620875765,
+                "time": 0.01918959617614746
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.8,
+                "mae": 0.7182126620875765,
+                "time": 0.01910567283630371
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 0.9,
+                "mae": 0.7182126620875765,
+                "time": 0.012883663177490234
+            },
+            {
+                "neighborhood-size": 0,
+                "absolute-sim-threshold": 1.0,
+                "mae": 0.7182126620875765,
+                "time": 0.01909780502319336
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.0,
+                "mae": 0.8525588089373063,
+                "time": 47.234963178634644
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.1,
+                "mae": 0.8525588089373063,
+                "time": 46.9754421710968
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.2,
+                "mae": 0.8515115228073974,
+                "time": 47.02282929420471
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.3,
+                "mae": 0.8475746726069298,
+                "time": 46.812209367752075
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.4,
+                "mae": 0.8345831525642606,
+                "time": 46.83095622062683
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.5,
+                "mae": 0.808824512558105,
+                "time": 46.804635763168335
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.6,
+                "mae": 0.7888474369338404,
+                "time": 46.73098349571228
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.7,
+                "mae": 0.7760793345532832,
+                "time": 46.818217039108276
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.8,
+                "mae": 0.761377938001424,
+                "time": 46.779956579208374
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 0.9,
+                "mae": 0.7527462019173414,
+                "time": 47.31577777862549
+            },
+            {
+                "neighborhood-size": 1,
+                "absolute-sim-threshold": 1.0,
+                "mae": 0.7447433224404124,
+                "time": 46.5173659324646
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.0,
+                "mae": 0.9177724953251941,
+                "time": 46.8202862739563
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.1,
+                "mae": 0.9176828059260599,
+                "time": 46.781381368637085
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.2,
+                "mae": 0.9156874534505375,
+                "time": 46.710498094558716
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.3,
+                "mae": 0.9088020069271283,
+                "time": 46.96594572067261
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.4,
+                "mae": 0.8860145139777692,
+                "time": 46.85299062728882
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.5,
+                "mae": 0.8547264724402851,
+                "time": 46.55956745147705
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.6,
+                "mae": 0.8256413232045546,
+                "time": 46.581536531448364
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.7,
+                "mae": 0.803651674442022,
+                "time": 46.50460171699524
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.8,
+                "mae": 0.7793407819648241,
+                "time": 47.0027289390564
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 0.9,
+                "mae": 0.7604950593656014,
+                "time": 46.651349782943726
+            },
+            {
+                "neighborhood-size": 2,
+                "absolute-sim-threshold": 1.0,
+                "mae": 0.7405215946115524,
+                "time": 46.564995527267456
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.0,
+                "mae": 0.8261573552129379,
+                "time": 46.72532773017883
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.1,
+                "mae": 0.825894289902127,
+                "time": 46.68004870414734
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.2,
+                "mae": 0.8270429490683777,
+                "time": 46.51171088218689
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.3,
+                "mae": 0.8294178618959818,
+                "time": 46.66512155532837
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.4,
+                "mae": 0.8263071011902181,
+                "time": 46.54912853240967
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.5,
+                "mae": 0.8250289374253583,
+                "time": 46.433348178863525
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.6,
+                "mae": 0.8158854193677716,
+                "time": 46.54953956604004
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.7,
+                "mae": 0.8024873083530782,
+                "time": 46.66736626625061
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.8,
+                "mae": 0.7818533964100616,
+                "time": 46.470194816589355
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 0.9,
+                "mae": 0.7661419937639674,
+                "time": 46.58330249786377
+            },
+            {
+                "neighborhood-size": 4,
+                "absolute-sim-threshold": 1.0,
+                "mae": 0.7451122361254211,
+                "time": 46.543903827667236
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.0,
+                "mae": 0.772353705974413,
+                "time": 46.687175989151
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.1,
+                "mae": 0.7712597427719726,
+                "time": 46.556668758392334
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.2,
+                "mae": 0.7799561604867995,
+                "time": 46.67521524429321
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.3,
+                "mae": 0.796450658714719,
+                "time": 46.663702726364136
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.4,
+                "mae": 0.8043852974166159,
+                "time": 46.60658383369446
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.5,
+                "mae": 0.8160668174820839,
+                "time": 46.47981929779053
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.6,
+                "mae": 0.8117208999097344,
+                "time": 46.47709655761719
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.7,
+                "mae": 0.8018890964640351,
+                "time": 46.61764979362488
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.8,
+                "mae": 0.7825665757991811,
+                "time": 46.488136529922485
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 0.9,
+                "mae": 0.7687273932138664,
+                "time": 46.576738119125366
+            },
+            {
+                "neighborhood-size": 8,
+                "absolute-sim-threshold": 1.0,
+                "mae": 0.7457359335760428,
+                "time": 46.619160652160645
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.0,
+                "mae": 0.7373996709191687,
+                "time": 46.77090883255005
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.1,
+                "mae": 0.7372292401306814,
+                "time": 46.84098196029663
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.2,
+                "mae": 0.7507247254292903,
+                "time": 46.72059464454651
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.3,
+                "mae": 0.7752844075789964,
+                "time": 46.566327810287476
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.4,
+                "mae": 0.7918175026069058,
+                "time": 46.5615017414093
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.5,
+                "mae": 0.8086496377860204,
+                "time": 46.68429207801819
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.6,
+                "mae": 0.8066347921793674,
+                "time": 46.413047552108765
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.7,
+                "mae": 0.7997074870778665,
+                "time": 46.384491205215454
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.8,
+                "mae": 0.78184142137309,
+                "time": 46.459176778793335
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 0.9,
+                "mae": 0.768338506865993,
+                "time": 46.47374606132507
+            },
+            {
+                "neighborhood-size": 16,
+                "absolute-sim-threshold": 1.0,
+                "mae": 0.7451136801526586,
+                "time": 46.43211793899536
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.0,
+                "mae": 0.7295080787459064,
+                "time": 46.90849757194519
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.1,
+                "mae": 0.7297176569642372,
+                "time": 46.753236293792725
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.2,
+                "mae": 0.7445692455843813,
+                "time": 46.575663566589355
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.3,
+                "mae": 0.7718713446980452,
+                "time": 46.69097328186035
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.4,
+                "mae": 0.7891317304002544,
+                "time": 46.552086353302
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.5,
+                "mae": 0.8071771450684687,
+                "time": 46.51777362823486
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.6,
+                "mae": 0.8058467182844737,
+                "time": 46.368608713150024
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.7,
+                "mae": 0.7990433278669762,
+                "time": 46.64386248588562
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.8,
+                "mae": 0.7813100662191923,
+                "time": 46.59418296813965
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 0.9,
+                "mae": 0.7681744700480615,
+                "time": 46.54906702041626
+            },
+            {
+                "neighborhood-size": 32,
+                "absolute-sim-threshold": 1.0,
+                "mae": 0.7451078467040966,
+                "time": 46.629387855529785
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.0,
+                "mae": 0.7297972697611192,
+                "time": 46.77172589302063
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.1,
+                "mae": 0.7308280790412336,
+                "time": 46.75769066810608
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.2,
+                "mae": 0.745310657927158,
+                "time": 46.80493640899658
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.3,
+                "mae": 0.7718907257504577,
+                "time": 46.70289373397827
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.4,
+                "mae": 0.7891849630879583,
+                "time": 46.587727069854736
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.5,
+                "mae": 0.8071931517088594,
+                "time": 46.59384536743164
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.6,
+                "mae": 0.8058490897048283,
+                "time": 46.58633589744568
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.7,
+                "mae": 0.7990380331476641,
+                "time": 46.468257665634155
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.8,
+                "mae": 0.7813100662191923,
+                "time": 46.40169930458069
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 0.9,
+                "mae": 0.7681744700480615,
+                "time": 46.57616710662842
+            },
+            {
+                "neighborhood-size": 64,
+                "absolute-sim-threshold": 1.0,
+                "mae": 0.7451078467040966,
+                "time": 46.454328536987305
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.0,
+                "mae": 0.7297982495114653,
+                "time": 46.66964387893677
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.1,
+                "mae": 0.7308400414140155,
+                "time": 46.73466753959656
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.2,
+                "mae": 0.7453098589262409,
+                "time": 46.56629991531372
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.3,
+                "mae": 0.7718907257504577,
+                "time": 46.73854660987854
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.4,
+                "mae": 0.7891849630879583,
+                "time": 46.64704084396362
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.5,
+                "mae": 0.8071931517088594,
+                "time": 46.429038763046265
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.6,
+                "mae": 0.8058490897048283,
+                "time": 46.777501583099365
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.7,
+                "mae": 0.7990380331476641,
+                "time": 46.802809953689575
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.8,
+                "mae": 0.7813100662191923,
+                "time": 46.67563223838806
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 0.9,
+                "mae": 0.7681744700480615,
+                "time": 46.99825930595398
+            },
+            {
+                "neighborhood-size": 128,
+                "absolute-sim-threshold": 1.0,
+                "mae": 0.7451078467040966,
+                "time": 46.96996808052063
             }
         ]
     }

@@ -141,7 +141,7 @@ class ItemBasedRecommender:
                 neighbors.append((current_sim, i))
 
         return self.pred_based_on_chosen_neighbors(neighbors, u, p)
-    
+
     def pred_with_absolute_sim_threshold(self, u: int, p: int, absolute_sim_threshold: int) -> float:
         """Predict the rating of user u on item p with neighbors that have absolute similarity higher than sim_threshold
         @param u: user index
@@ -157,6 +157,61 @@ class ItemBasedRecommender:
             current_sim = self.sim(p, i)
             if (abs(current_sim) >= absolute_sim_threshold):
                 neighbors.append((current_sim, i))
+
+        return self.pred_based_on_chosen_neighbors(neighbors, u, p)
+
+    def pred_with_size_and_threshold(self, u: int, p: int, neighborhood_size: int, sim_threshold: float) -> float:
+        """Predict the rating of user u on item p with the neighborhood of highest similarity
+        @param u: user index
+        @param p: item index
+        @param neighborhood_size: the size of neighborhood
+        @param sim_threshold: the threshold of similarity
+        @return predicted rating
+        """
+        sim_heap = []
+
+        if neighborhood_size > 0:
+            for i in range(self.num_items):
+                if i == p or self.current_matrix[u][i] == self.no_review:
+                    continue
+
+                current_sim = self.sim(p, i)
+                if (current_sim >= sim_threshold):
+                    if len(sim_heap) < neighborhood_size:
+                        heapq.heappush(sim_heap, (current_sim, i))
+                    else:
+                        if current_sim > sim_heap[0][0]:
+                            heapq.heappushpop(sim_heap, (current_sim, i))
+        return self.pred_based_on_chosen_neighbors(sim_heap, u, p)
+
+    def pred_with_size_and_absolute_threshold(self, u: int, p: int, neighborhood_size: int, absolute_sim_threshold: float) -> float:
+        """Predict the rating of user u on item p with the neighborhood of highest similarity
+        @param u: user index
+        @param p: item index
+        @param neighborhood_size: the size of neighborhood
+        @param absolute_sim_threshold: the absolute threshold of similarity
+        @return predicted rating
+        """
+        sim_heap = []
+        current_sims = {}
+
+        if neighborhood_size > 0:
+            for i in range(self.num_items):
+                if i == p or self.current_matrix[u][i] == self.no_review:
+                    continue
+
+                current_sim = self.sim(p, i)
+                if (abs(current_sim) >= absolute_sim_threshold):
+                    if len(sim_heap) < neighborhood_size:
+                        heapq.heappush(sim_heap, (abs(current_sim), i))
+                        current_sims[i] = current_sim
+                    else:
+                        if abs(current_sim) > sim_heap[0][0]:
+                            heapq.heappushpop(sim_heap, (abs(current_sim), i))
+                            current_sims[i] = current_sim
+
+        # Reconstruct the neighbors list with the real similarity
+        neighbors = [(current_sims[i], i) for (_, i) in sim_heap]
 
         return self.pred_based_on_chosen_neighbors(neighbors, u, p)
 
