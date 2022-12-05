@@ -560,7 +560,7 @@ class RecommenderCrossValidator():
         print(f"num_users: {self.num_users}, num_items: {self.num_items}")
 
         # Exponential step
-        step_exponent = 2
+        step_exponent = 1.1
         item_neighborhood_sizes = [
             0] + [round(pow(step_exponent, i)) for i in range(0, math.ceil(math.log(self.num_items, step_exponent)))]
         user_neighborhood_sizes = [
@@ -589,6 +589,10 @@ class RecommenderCrossValidator():
         # user_size_and_threshold = [(5, -1)]
         # user_size_and_absolute_threshold = [(5, 0)]
 
+        print(f"{len(item_size_and_threshold)=}")
+        print(f"{len(item_size_and_absolute_threshold)=}")
+        print(f"{len(user_size_and_threshold)=}")
+        print(f"{len(user_size_and_absolute_threshold)=}")
 
         # item_based_thread = Thread(target=self.item_based_validate, args=(
         #     item_neighborhood_sizes, sim_thresholds, absolute_sim_thresholds, item_size_and_threshold, item_size_and_absolute_threshold))
