@@ -1,17 +1,18 @@
 import csv
 import json
 import matplotlib.pyplot as plt
-from collections.abc import Iterable
+from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
+from collections import defaultdict
+# from collections.abc import Iterable
 
 col_names = ["mae", "neighborhood-size", "sim-threshold", "absolute-sim-threshold", "time"]
-col_types = [int, int, int, float, lambda x: bool(int(x)), float, lambda d: float(d), lambda x: bool(int(x))]
-INTERVAL = 50
 
 class GraphController:
     def __init__(self):
-        self.graphs = []
+        self.graphs = defaultdict(list)
 
-    def add_graph(self, x_type, y_type, data):
+    def add_graph(self, dimension, support_axis_types, data):
         """
         Add a graph that contains 2 data sets to print 
         
@@ -20,17 +21,18 @@ class GraphController:
         y_type -- the data name/type of the y axis
         data   -- the full data set
         """
-        graph = Graph2D(x_type, y_type)
+        graph = Graph(dimension, support_axis_types)
 
-        print(x_type, y_type)
-        for row in data[x_type]:
-            x, y = row[x_type], row[y_type]
-            graph.add_data(x, y)
+        for row in data:
+            data_list = []
+            for t in support_axis_types:
+                data_list.append(row[t])
+            graph.add_data(data_list)
 
-        self.graphs.append(graph)
+        self.graphs[dimension].append(graph)
 
 
-    def display_graph(self, grid=False):
+    def display_graph(self, window_title=None, grid=True):
         """
         Plot a graph to matplotlib figure
         
@@ -38,43 +40,49 @@ class GraphController:
         x_right_limit -- The right limit of the x axis on the plot
         grid          -- Indicate whether to show grid
         """
-        fig, subplots = plt.subplots(len(self.graphs))
+        # fig, subplots = plt.subplots(len(self.graphs))
 
-        if not isinstance(subplots, Iterable):
-            subplots = [subplots] 
-            
-        for i, sp in enumerate(subplots):
-            g = self.graphs[i]
-            sp.plot(g.x_axis, g.y_axis)
+        # if not isinstance(subplots, Iterable):
+        #     subplots = [subplots] 
+        fig = plt.figure()
+        for i, g in enumerate(self.graphs[2]):
+            sp = fig.add_subplot(len(self.graphs[2]), 1, i+1)
+            sp.set_xlabel(g.labels[0])
+            sp.set_ylabel(g.labels[1])
+            # sp.set_xlim(left=0)
+            sp.plot(*g.axes)
             sp.grid(grid)
-            sp.set_xlabel(g.x_label)
-            sp.set_ylabel(g.y_label)
-            sp.set_xlim(left=0)
-        fig.tight_layout(pad=2)
+            fig.tight_layout(pad=2)
+
+        fig.canvas.manager.set_window_title(window_title + " 2D")
+
+        for i, g in enumerate(self.graphs[3]):
+            fig = plt.figure()
+            sp = fig.add_subplot(111, projection='3d')
+            X, Y = np.asarray(g.axes[0]), np.asarray(g.axes[1])
+            Z = np.asarray(g.axes[2])
+            sp.set_xlabel(g.labels[0])
+            sp.set_ylabel(g.labels[1])
+            sp.set_zlabel(g.labels[2])
+            sp.plot_trisurf(X, Y, Z)
+            fig.canvas.manager.set_window_title(window_title + " 3D")
+
+
         # fig.set_size_inches(20, 10)
+        # plt.subplots_adjust(hspace=0.5)
+
         fig.show()
-        # plt.subplots_adjust(hspace=0.1)
 
-class Graph2D:
-    def __init__(self, x_label, y_label):
-        self.x_label = x_label
-        self.y_label = y_label
-        self.x_axis, self.y_axis = [], []
+class Graph:
+    def __init__(self, dimension, labels):
+        self.labels = labels
+        self.dimension = dimension
+        self.axes = [[] for _ in range(dimension)]
 
-    def add_data(self, x, y):
-        """
-        Add data to the graph
-        
-        Keyword arguments:
-        x -- the x coordinate of the data point
-        y -- the y coordinate of the data point
-        """
-        
-        if y >= 9999:
-            return
-
-        self.x_axis.append(x)
-        self.y_axis.append(y)
+    def add_data(self, data_list):
+        for i in range(len(data_list)):
+            self.axes[i].append(data_list[i])
+    
         # self.ax.set_title(self.title)
         # self.ax.plot(self.x_axis, self.y_axis, color="C0")
 
@@ -100,51 +108,57 @@ class JSONParser:
             return {}
     
 
-    def str_row_to_types(self, row):
-        """
-        Convert a parsed str array to corresponding types
-        """
-        if len(row) > len(col_names):
-            return []
-
-        return tuple(col_types[i](val) for i, val in enumerate(row))
-    
-
     def print_data(self):
         print(self.data)
     
     
-    def plot_data(self):
-        self.graph_controller.display_graph()
+    def plot_data(self, window_title):
+        self.graph_controller.display_graph(window_title)
     
 
-    def add_graph(self, x_type: str, y_type="mae"):
+    def add_graph(self, types, data_key):
         '''
         Takes a pair of data type to add a graph on x and y axis.
         Default of x axis will be "interval".
         E.g. y_axis = "gas" and x_axis = "interval" 
         '''
-        self.graph_controller.add_graph(x_type, y_type, self.data)
+        self.graph_controller.add_graph(len(types), types, self.data[data_key])
 
     
-def plot_data(filename, data_names: list[str]):
+def plot_data(window_title, filename, is_user_based, data_names_2d, data_names_3d=[]):
     """
     Plot the data in the filename with a list of subplot data names
     All names: ["interval", "gas", "brake","speed", "object", "object_speed","distance", "skid"]
     """
-    json_reader = JSONParser(filename, data_names)
+    json_reader = JSONParser(filename, is_user_based)
     if not json_reader.data:
         return
 
-    for n in data_names:
-        json_reader.add_graph(n)
+    for n in data_names_2d:
+        json_reader.add_graph((n, "mae"), n)
 
-    json_reader.plot_data()
+    for k, n1, n2 in data_names_3d:
+        json_reader.add_graph((data_names_2d[n1], data_names_2d[n2], "mae"), k)
+
+    json_reader.plot_data(window_title)
 
 
 if __name__ == "__main__":
     # Put all graphs want to plot here
     # plot_data("csv_files/ACC_Manual_preemption.csv", ["gas", "brake", "speed"])
-    plot_data("./assignment2-results-Thang.json", ["neighborhood-size", "sim-threshold", "absolute-sim-threshold"])
+    plot_data(
+        "Item-based",
+        "./assignment2-results-Thang.json",
+        False,
+        ["neighborhood-size", "sim-threshold", "absolute-sim-threshold"],
+        [("size-and-threshold", 0, 1), ("size-and-absolute-threshold", 0, 2)], # comment/uncomment to add/remove 3D graphs
+    )
+    plot_data(
+        "User-based",
+        "./assignment2-results-Thang.json",
+        True,
+        ["neighborhood-size", "sim-threshold", "absolute-sim-threshold"],
+        [("size-and-threshold", 0, 1), ("size-and-absolute-threshold", 0, 2)], # comment/uncomment to add/remove 3D graphs
+    )
 
     plt.show() # Don't modify this and please do only one show
