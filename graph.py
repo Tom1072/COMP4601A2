@@ -22,13 +22,25 @@ class GraphController:
         data   -- the full data set
         """
         graph = Graph(dimension, support_axis_types)
+        min_mae = float("inf")
+        min_list = []
 
         for row in data:
             data_list = []
+
             for t in support_axis_types:
                 data_list.append(row[t])
-            graph.add_data(data_list)
 
+            if row["mae"] < min_mae:
+                min_mae = row["mae"]
+                min_list = [[row[t] for t in support_axis_types]]
+            elif row["mae"] < min_mae:
+                min_list.append([row[t] for t in support_axis_types])
+
+            graph.add_data(data_list)
+        
+        for m in min_list:
+            graph.add_min_mae_data(m)
         self.graphs[dimension].append(graph)
 
 
@@ -40,17 +52,15 @@ class GraphController:
         x_right_limit -- The right limit of the x axis on the plot
         grid          -- Indicate whether to show grid
         """
-        # fig, subplots = plt.subplots(len(self.graphs))
-
-        # if not isinstance(subplots, Iterable):
-        #     subplots = [subplots] 
         fig = plt.figure()
         for i, g in enumerate(self.graphs[2]):
             sp = fig.add_subplot(len(self.graphs[2]), 1, i+1)
             sp.set_xlabel(g.labels[0])
             sp.set_ylabel(g.labels[1])
             # sp.set_xlim(left=0)
+            # sp.draw()
             sp.plot(*g.axes)
+            sp.plot(*g.min_list, "ro")
             sp.grid(grid)
             fig.tight_layout(pad=2)
 
@@ -59,12 +69,12 @@ class GraphController:
         for i, g in enumerate(self.graphs[3]):
             fig = plt.figure()
             sp = fig.add_subplot(111, projection='3d')
-            X, Y = np.asarray(g.axes[0]), np.asarray(g.axes[1])
-            Z = np.asarray(g.axes[2])
+            # X, Y, Z = np.asarray(g.axes[0]), np.asarray(g.axes[1]), np.asarray(g.axes[2])
             sp.set_xlabel(g.labels[0])
             sp.set_ylabel(g.labels[1])
             sp.set_zlabel(g.labels[2])
-            sp.plot_trisurf(X, Y, Z)
+            sp.plot_trisurf(*g.axes)
+            sp.scatter(*g.min_list, color="r")
             fig.canvas.manager.set_window_title(window_title + " 3D")
 
 
@@ -73,16 +83,22 @@ class GraphController:
 
         fig.show()
 
+
 class Graph:
     def __init__(self, dimension, labels):
         self.labels = labels
         self.dimension = dimension
         self.axes = [[] for _ in range(dimension)]
+        self.min_list = [[] for _ in range(dimension)]
 
     def add_data(self, data_list):
         for i in range(len(data_list)):
             self.axes[i].append(data_list[i])
     
+    def add_min_mae_data(self, min_list):
+        for i in range(len(min_list)):
+            self.min_list[i].append(min_list[i])
+        # self.min_list = min_list
         # self.ax.set_title(self.title)
         # self.ax.plot(self.x_axis, self.y_axis, color="C0")
 
