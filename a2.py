@@ -7,10 +7,7 @@ from threading import Thread, Lock
 from tqdm import tqdm
 
 INPUT_FILE = "assignment2-data.txt"
-OUTPUT_FILE = "assignment2-results.json"
-
-TEST_INPUT_FILE = "parsed-data-trimmed.txt"
-TEST_OUTPUT_FILE = "parsed-data-trimmed-results.json"
+OUTPUT_FILE = "assignment2-mae-results.json"
 
 
 class RecommenderCrossValidator():
@@ -412,9 +409,7 @@ class RecommenderCrossValidator():
                     self.user_based_neighborhood_size_rec_matrix[user][item] = self.boundary_value(
                         pred_rating)
 
-            mae = self.compute_mae(
-                self.user_based_neighborhood_size_rec_matrix)
-            # print(f"User-based {neighborhood_size=}, {neighborhood_size_mae=}, {neighborhood_size_time=}")
+            mae = self.compute_mae(self.user_based_neighborhood_size_rec_matrix)
             self.lock.acquire()
             self.results["user-based"]["neighborhood-size"].append({
                 "neighborhood-size": size,
@@ -568,12 +563,6 @@ class RecommenderCrossValidator():
         sim_thresholds = [threshold/10 for threshold in range(-10, 11, 1)]
         absolute_sim_thresholds = [threshold / 10 for threshold in range(0, 11, 1)]
 
-        # Linear step
-        # user_neighborhood_sizes = [i for i in range(0, self.num_users + 1)]
-        # item_neighborhood_sizes = [i for i in range(0, self.num_items + 1)]
-        # sim_thresholds = [threshold/100 for threshold in range(-100, 101, 1)]
-        # absolute_sim_thresholds = [threshold /
-        #                            100 for threshold in range(0, 101, 1)]
         item_size_and_threshold = [
             (size, threshold) for size in item_neighborhood_sizes for threshold in sim_thresholds]
         item_size_and_absolute_threshold = [
@@ -583,25 +572,10 @@ class RecommenderCrossValidator():
         user_size_and_absolute_threshold = [
             (size, threshold) for size in user_neighborhood_sizes for threshold in absolute_sim_thresholds]
 
-        # Test
-        # item_size_and_threshold = [(5, -1)]
-        # item_size_and_absolute_threshold = [(5, 0)]
-        # user_size_and_threshold = [(5, -1)]
-        # user_size_and_absolute_threshold = [(5, 0)]
-
-        print(f"{len(item_size_and_threshold)=}")
-        print(f"{len(item_size_and_absolute_threshold)=}")
-        print(f"{len(user_size_and_threshold)=}")
-        print(f"{len(user_size_and_absolute_threshold)=}")
-
-        # item_based_thread = Thread(target=self.item_based_validate, args=(
-        #     item_neighborhood_sizes, sim_thresholds, absolute_sim_thresholds, item_size_and_threshold, item_size_and_absolute_threshold))
-        # user_based_thread = Thread(target=self.user_based_validate, args=(
-        #     user_neighborhood_sizes, sim_thresholds, absolute_sim_thresholds, user_size_and_threshold, user_size_and_absolute_threshold))
         item_based_thread = Thread(target=self.item_based_validate, args=(
-            [], [], [], item_size_and_threshold, item_size_and_absolute_threshold))
+            item_neighborhood_sizes, sim_thresholds, absolute_sim_thresholds, item_size_and_threshold, item_size_and_absolute_threshold))
         user_based_thread = Thread(target=self.user_based_validate, args=(
-            [], [], [], user_size_and_threshold, user_size_and_absolute_threshold))
+            user_neighborhood_sizes, sim_thresholds, absolute_sim_thresholds, user_size_and_threshold, user_size_and_absolute_threshold))
 
         item_based_thread.start()
         user_based_thread.start()
@@ -615,7 +589,5 @@ class RecommenderCrossValidator():
 
 
 if __name__ == "__main__":
-    # with RecommenderCrossValidator(TEST_INPUT_FILE, TEST_OUTPUT_FILE) as validator:
-    #     validator.start_validation()
     with RecommenderCrossValidator(INPUT_FILE, OUTPUT_FILE) as validator:
         validator.start_validation()
